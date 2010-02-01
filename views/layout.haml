@@ -1,0 +1,50 @@
+!!! Transitional
+
+%html{ html_attrs }
+
+  %head
+    %title Arizona's First Ruby Conference - Coming September 2010 | SunnyConf
+    %meta{ 'http-equiv' => 'Content-Type', :content => 'text/html; charset=utf-8' }
+    %style{ :type => 'text/css' }
+      :sass
+        *
+          :margin 0
+          :padding 0
+        body
+          :background #b5b5b5
+        #header
+          :height 344px
+          :background white url(/images/header.jpg) top center no-repeat
+        #content
+          :background #b5b5b5 url(/images/content.jpg) top center no-repeat
+          :text-align center
+          :padding 35px 0
+          h1
+            :margin 0 auto
+            :width 500px
+            :height 87px
+            :background transparent url(/images/sunnyconf.png) top left no-repeat
+            :text-indent -100000px
+            :margin 0 auto 40px auto
+          h2
+            :display none
+          p
+            :margin 0 auto 30px auto
+            :width 448px
+            :height 58px
+            :background transparent url(/images/proud.png) top left no-repeat
+            :text-indent -100000px
+            strong
+              :display none
+        #follow
+          a
+            :display block
+            :width 290px
+            :height 68px
+            :background transparent url(/images/follow.png) top left no-repeat
+            :text-indent -100000px
+            :margin 0 auto
+
+
+  %body
+    = yield
