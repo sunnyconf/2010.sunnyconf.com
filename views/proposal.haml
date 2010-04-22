@@ -1,0 +1,25 @@
+%form{ :action => '/proposals', :method => 'post' }
+
+  %fieldset
+    %legend Submit a Proposal
+
+    - if @proposal.errors.any?
+      #error_messages
+        You didn't fully fill out your proposal!
+        %ul
+          - for message in @proposal.errors.full_messages
+            %li= message
+
+    %label
+      Name
+      %input{ :type => 'text', :name => 'proposal[name]', :value => @proposal.name, :autofocus => true, :placeholder => 'Yukihiro Matsumoto' }
+
+    %label
+      Email
+      %input{ :type => 'email', :name => 'proposal[email]', :value => @proposal.email, :placeholder => 'email@ruby-lang.org' }
+
+    %label
+      Enter your proposal text
+      %textarea{ :name => 'proposal[text]', :placeholder => 'This is what I want to speak about ...' }= @proposal.text
+
+    %input{ :type => 'submit', :name => 'commit', :value => 'Preview Proposal' }
