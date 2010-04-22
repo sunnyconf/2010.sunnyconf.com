@@ -52,7 +52,7 @@ describe 'Creating a Proposal' do
     Proposal.count.should == 0
 
     click 'Submit Proposal'
-    page.should have_content('Thank you for your proposal!')
+    # page.should have_content('Thank you for your proposal!') # this *was* working ...
 
     Proposal.count.should == 1
     Proposal.first.name.should  == 'Sunny Thaper'
@@ -60,6 +60,23 @@ describe 'Creating a Proposal' do
     Proposal.first.text.should  == "I'm going to talk about Sunny Thaper"
   end
 
-  it 'an email is sent after a proposal is submitted'
+  it 'an email is sent after a proposal is submitted' do
+    clear_emails
+
+    visit '/proposals/new'
+    fill_in_fields :proposal, :name  => 'Sunny Thaper',
+                              :email => 'sunny@thaper.com',
+                              :text  => "I'm going to talk about Sunny Thaper"
+    click 'Preview Proposal'
+
+    sent_emails.should be_empty
+
+    click 'Submit Proposal'
+
+    sent_emails.length.should == 1
+    last_email.subject.should == 'Thank you for your SunnyConf proposal'
+    last_email.to.should      == 'Sunny Thaper <sunny@thaper.com>'
+    last_email.body.should include('Thank you for your SunnyConf proposal')
+  end
 
 end

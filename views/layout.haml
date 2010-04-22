@@ -5,11 +5,26 @@
     %title Arizona's First Ruby Conference - Coming September 2010 | SunnyConf
     %script{ :type => 'text/javascript', :src => 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js' }
     %script{ :type => 'text/javascript', :src => 'http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js' }
+    %script{ :type => 'text/javascript', :src => '/javascripts/jquery.scrollTo.js' }
+    %script{ :type => 'text/javascript', :src => '/javascripts/jquery.localscroll.js' }
+    %script{ :type => 'text/javascript', :src => '/javascripts/application.js' }
     %link{ :rel => 'stylesheet', :type => 'text/javascript', :href => '/stylesheets/application.css' }
   %body
     #container
 
-      #header bigass ruby logo
+      #header
+        %h1 bigass ruby logo
+
+      #nav
+        %ul
+          %li.event
+            %a{ :href => '#event' } Event
+          %li.about
+            %a{ :href => '#about' } About
+          %li.schedule
+            %a{ :href => '#schedule' } Schedule
+          %li.proposals
+            %a{ :href => '/proposals/new' } Proposals
 
       #content
         - if flash.include? :notice

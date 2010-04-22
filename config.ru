@@ -4,4 +4,4 @@ dev_db = "sqlite3://#{ File.expand_path(File.dirname(__FILE__) + '/sunnyconf.sql
 DataMapper.setup :default, ENV['DATABASE_URL'] || dev_db
 DataMapper.auto_upgrade!
 
-run Sinatra::Application
+run SunnyConf.new

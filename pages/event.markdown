@@ -9,4 +9,4 @@ March 11-12, 2010
 Salt Lake City Public Library
 210 E 400 S
 Salt Lake City, UT 84111
-[[map](http://www.google.com)]
+[map](http://www.google.com)

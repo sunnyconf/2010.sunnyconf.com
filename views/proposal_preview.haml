@@ -1,23 +1,22 @@
 %form{ :action => '/proposals', :method => 'post' }
 
-  %fieldset
-    %legend Preview your Proposal
+  %h2 Preview your Proposal
 
-    %dl
-      %dt Name
-      %dd
-        = @proposal.name
-        %input{ :type => 'hidden', :name => 'proposal[name]', :value => @proposal.name }
+  %dl
+    %dt Name
+    %dd
+      = @proposal.name
+      %input{ :type => 'hidden', :name => 'proposal[name]', :value => @proposal.name }
 
-      %dt Email
-      %dd
-        = @proposal.email
-        %input{ :type => 'hidden', :name => 'proposal[email]', :value => @proposal.email }
+    %dt Email
+    %dd
+      = @proposal.email
+      %input{ :type => 'hidden', :name => 'proposal[email]', :value => @proposal.email }
 
-      %dt Proposal
-      %dd
-        %pre= @proposal.text
-        %input{ :type => 'hidden', :name => 'proposal[text]', :value => @proposal.text }
+    %dt Proposal
+    %dd
+      %pre= @proposal.text
+      %input{ :type => 'hidden', :name => 'proposal[text]', :value => @proposal.text }
 
-    %input{ :type => 'submit', :name => 'commit', :value => 'Edit Proposal' }
-    %input{ :type => 'submit', :name => 'commit', :value => 'Submit Proposal' }
+  %input{ :type => 'submit', :name => 'commit', :value => 'Edit Proposal' }
+  %input{ :type => 'submit', :name => 'commit', :value => 'Submit Proposal' }
