@@ -19,7 +19,7 @@ class SunnyConf < Sinatra::Base
       raise "You must specify an environment variable named EMAIL_OPTIONS" unless ENV['EMAIL_OPTIONS']
       email_options = eval(ENV['EMAIL_OPTIONS'])
       # Example options: 
-      # 'email_options = {:smtp=>{:tls => true, :host=>"smtp.gmail.com", :domain=>"sunnyconf.com", :port=>"587", :user=>"remi@sunnyconf.com", :password=>"i<3ruby", :auth=>:plain}, :via=>:smtp, :from=>"remi@sunnyconf.com"}'
+      # 'email_options = {:smtp=>{:tls => true, :host=>"smtp.gmail.com", :domain=>"sunnyconf.com", :port=>"587", :user=>"remi@sunnyconf.com", :password=>"*******", :auth=>:plain}, :via=>:smtp, :from=>"remi@sunnyconf.com"}'
       Pony.mail({ :to => email_address, :subject => subject, :body => body }.merge(email_options))
     end
   end
