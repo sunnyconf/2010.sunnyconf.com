@@ -5,3 +5,4 @@ DataMapper.setup :default, ENV['DATABASE_URL'] || dev_db
 DataMapper.auto_upgrade!
 
 run SunnyConf.new
+

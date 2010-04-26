@@ -1,6 +1,6 @@
 %form{ :action => '/proposals', :method => 'post' }
 
-  %h2 Preview your Proposal
+  %h1 Preview your Proposal
 
   %dl
     %dt Name
@@ -18,5 +18,6 @@
       %pre= @proposal.text
       %input{ :type => 'hidden', :name => 'proposal[text]', :value => @proposal.text }
 
-  %input{ :type => 'submit', :name => 'commit', :value => 'Edit Proposal' }
-  %input{ :type => 'submit', :name => 'commit', :value => 'Submit Proposal' }
+  %input{ :type => 'submit', :name => 'commit', :value => 'Edit Proposal', :class => 'awesome cancel' }
+  %input{ :type => 'submit', :name => 'commit', :value => 'Submit Proposal', :class => 'awesome' }
+

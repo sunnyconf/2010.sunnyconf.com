@@ -1,24 +1,26 @@
 %form{ :action => '/proposals', :method => 'post' }
 
-  %h2 Submit a Proposal
+  %h1 Submit a Proposal
 
   - if @proposal.errors.any?
     #error_messages
-      You didn't fully fill out your proposal!
+      %h3 You didn't fully fill out your proposal!
       %ul
         - for message in @proposal.errors.full_messages
           %li= message
 
-  %label
-    Name
-    %input{ :type => 'text', :name => 'proposal[name]', :value => @proposal.name, :autofocus => true, :placeholder => 'Yukihiro Matsumoto' }
+  %p
+    %label{ :for  => 'proposal_name'} Name
+    %input{ :type => 'text', :name => 'proposal[name]', :id => 'proposal_name', :value => @proposal.name, :autofocus => true, :placeholder => 'Yukihiro Matsumoto' }
 
-  %label
-    Email
-    %input{ :type => 'email', :name => 'proposal[email]', :value => @proposal.email, :placeholder => 'email@ruby-lang.org' }
+  %p
+    %label{ :for  => 'proposal_email' } Email
+    %input{ :type => 'email', :name => 'proposal[email]', :id => 'proposal_email', :value => @proposal.email, :placeholder => 'email@ruby-lang.org' }
+  
+  %p
+    %label{ :for => 'proposal_text'} What have you got in mind?
+    %textarea{ :name => 'proposal[text]', :id => 'proposal_text', :placeholder => 'This is what I want to speak about ...' }= @proposal.text
 
-  %label
-    Enter your proposal text
-    %textarea{ :name => 'proposal[text]', :placeholder => 'This is what I want to speak about ...' }= @proposal.text
+  %p
+    %input{ :type => 'submit', :name => 'commit', :value => 'Preview Your Proposal', :class => 'awesome' }
 
-  %input{ :type => 'submit', :name => 'commit', :value => 'Preview Proposal' }

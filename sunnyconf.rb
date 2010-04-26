@@ -1,10 +1,20 @@
 #! /usr/bin/env ruby
-%w[ rubygems sinatra/base haml datamapper jadof rack/flash pony ].each {|lib| require lib }
-Dir['lib/**/*.rb'].sort.each                                      {|lib| require lib }
+require 'rubygems'
+require 'sinatra/base'
+require 'haml'
+require 'datamapper'
+require 'jadof'
+require 'rack/flash'
+require 'pony'
+
+Dir['lib/**/*.rb'].sort.each                                           {|lib| require lib }
 
 class SunnyConf < Sinatra::Base
   use Rack::Session::Cookie
   use Rack::Flash
+  
+  set :root, File.dirname(__FILE__)
+  set :public, Proc.new { File.join(root, "public") }
 
   helpers do
     def cache!
@@ -19,27 +29,13 @@ class SunnyConf < Sinatra::Base
       raise "You must specify an environment variable named EMAIL_OPTIONS" unless ENV['EMAIL_OPTIONS']
       email_options = eval(ENV['EMAIL_OPTIONS'])
       # Example options: 
-      # 'email_options = {:smtp=>{:tls => true, :host=>"smtp.gmail.com", :domain=>"sunnyconf.com", :port=>"587", :user=>"remi@sunnyconf.com", :password=>"*******", :auth=>:plain}, :via=>:smtp, :from=>"remi@sunnyconf.com"}'
+      # '{:smtp=>{:tls => true, :host=>"smtp.gmail.com", :domain=>"sunnyconf.com", :port=>"587", :user=>"remi@sunnyconf.com", :password=>"*******", :auth=>:plain}, :via=>:smtp, :from=>"remi@sunnyconf.com"}'
       Pony.mail({ :to => email_address, :subject => subject, :body => body }.merge(email_options))
     end
   end
 
-  # Static Pages
-
   get '/' do
     cache!
-    haml :index
-  end
-
-  get '/stylesheets/application.css' do
-    cache!
-    content_type 'text/css'
-    sass :stylesheet
-  end
-
-  # Proposals
-
-  get '/proposals/new' do
     @proposal = Proposal.new
     haml :proposal
   end
@@ -48,7 +44,7 @@ class SunnyConf < Sinatra::Base
     @proposal = Proposal.new params[:proposal]
 
     case params[:commit]
-    when 'Preview Proposal'
+    when 'Preview Your Proposal'
       haml @proposal.valid? ? :proposal_preview : :proposal
 
     when 'Edit Proposal'
@@ -63,6 +59,12 @@ class SunnyConf < Sinatra::Base
         render :proposal
       end
     end
+  end
+
+  get '/stylesheets/application.css' do
+    cache!
+    content_type 'text/css'
+    sass :stylesheet
   end
 
   # Catch-All (renders pages in ./pages/)

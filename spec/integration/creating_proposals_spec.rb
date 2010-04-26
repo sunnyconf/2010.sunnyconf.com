@@ -3,20 +3,20 @@ require File.dirname(__FILE__) + '/../spec_helper'
 describe 'Creating a Proposal' do
 
   it 'shows errors for required fields' do
-    visit '/proposals/new'
+    visit '/'
     fill_in_fields :proposal, :name  => 'Sunny Thaper',
                               :email => 'sunny@thaper.com'
-    click 'Preview Proposal'
+    click 'Preview Your Proposal'
 
     page.should have_content('must not be blank')
   end
 
   it 'can preview a proposal' do
-    visit '/proposals/new'
+    visit '/'
     fill_in_fields :proposal, :name  => 'Sunny Thaper',
                               :email => 'sunny@thaper.com',
                               :text  => "I'm going to talk about Sunny Thaper"
-    click 'Preview Proposal'
+    click 'Preview Your Proposal'
 
     page.should have_content('Sunny Thaper')
     page.should have_content('sunny@thaper.com')
@@ -25,15 +25,15 @@ describe 'Creating a Proposal' do
   end
 
   it 'can edit a proposal (after previewing it)' do
-    visit '/proposals/new'
+    visit '/'
     fill_in_fields :proposal, :name  => 'Sunny Thaper',
                               :email => 'sunny@thaper.com',
                               :text  => "I'm going to talk about Sunny Thaper"
-    click 'Preview Proposal'
+    click 'Preview Your Proposal'
     click 'Edit Proposal'
 
     fill_in_fields :proposal, :text => "Haha! Different proposal!"
-    click 'Preview Proposal'
+    click 'Preview Your Proposal'
 
     page.should have_content('Sunny Thaper')
     page.should have_content('sunny@thaper.com')
@@ -43,11 +43,11 @@ describe 'Creating a Proposal' do
   end
 
   it 'can submit a proposal' do
-    visit '/proposals/new'
+    visit '/'
     fill_in_fields :proposal, :name  => 'Sunny Thaper',
                               :email => 'sunny@thaper.com',
                               :text  => "I'm going to talk about Sunny Thaper"
-    click 'Preview Proposal'
+    click 'Preview Your Proposal'
 
     Proposal.count.should == 0
 
@@ -63,11 +63,11 @@ describe 'Creating a Proposal' do
   it 'an email is sent after a proposal is submitted' do
     clear_emails
 
-    visit '/proposals/new'
+    visit '/'
     fill_in_fields :proposal, :name  => 'Sunny Thaper',
                               :email => 'sunny@thaper.com',
                               :text  => "I'm going to talk about Sunny Thaper"
-    click 'Preview Proposal'
+    click 'Preview Your Proposal'
 
     sent_emails.should be_empty
 
