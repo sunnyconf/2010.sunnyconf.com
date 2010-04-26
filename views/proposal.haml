@@ -1,6 +1,6 @@
-%form{ :action => '/proposals', :method => 'post' }
+%h1 Submit a Proposal
 
-  %h1 Submit a Proposal
+%form{ :action => '/proposals', :method => 'post' }
 
   - if @proposal.errors.any?
     #error_messages

@@ -12,11 +12,12 @@ Dir['lib/**/*.rb'].sort.each                                           {|lib| re
 class SunnyConf < Sinatra::Base
   use Rack::Session::Cookie
   use Rack::Flash
-  
+
   set :root, File.dirname(__FILE__)
   set :public, Proc.new { File.join(root, "public") }
 
   helpers do
+
     def cache!
       headers['Cache-Control'] = 'public, max-age=300' if ENV['RACK_ENV'] == 'production'
     end
@@ -28,16 +29,21 @@ class SunnyConf < Sinatra::Base
     def email email_address, subject, body
       raise "You must specify an environment variable named EMAIL_OPTIONS" unless ENV['EMAIL_OPTIONS']
       email_options = eval(ENV['EMAIL_OPTIONS'])
-      # Example options: 
+      # Example options:
       # '{:smtp=>{:tls => true, :host=>"smtp.gmail.com", :domain=>"sunnyconf.com", :port=>"587", :user=>"remi@sunnyconf.com", :password=>"*******", :auth=>:plain}, :via=>:smtp, :from=>"remi@sunnyconf.com"}'
       Pony.mail({ :to => email_address, :subject => subject, :body => body }.merge(email_options))
     end
+
+    def partial(page, options={})
+      haml page, options.merge!(:layout => false)
+    end
+
   end
 
   get '/' do
     cache!
     @proposal = Proposal.new
-    haml :proposal
+    haml :index
   end
 
   post '/proposals' do

@@ -1,26 +1,17 @@
-%form{ :action => '/proposals', :method => 'post' }
+%h1 Coming September 25th!
 
-  %h1 Submit a Proposal
+%p We're still working out the details, but here's what we can say for sure:
 
-  - if @proposal.errors.any?
-    #error_messages
-      %h3 You didn't fully fill out your proposal!
-      %ul
-        - for message in @proposal.errors.full_messages
-          %li= message
+%ul
+  %li This will be a grassroots, single-track event by Ruby lovers for ruby lovers.
+  %li It will be hosted in Phoenix.
+  %li Our speakers will be awesome.
+  %li Registration will be very reasonable.
+  %li Hacking will occur.
 
-  %p
-    %label{ :for  => 'proposal_name'} Name
-    %input{ :type => 'text', :name => 'proposal[name]', :id => 'proposal_name', :value => @proposal.name, :autofocus => true, :placeholder => 'Yukihiro Matsumoto' }
+%p
+  %a{ :href => '/documents/sponsors.pdf',      :class => 'awesome' } Sponsor SunnyConf
+  %a{ :href => 'http://twitter.com/sunnyconf', :class => 'awesome' } Follow Us On Twitter
 
-  %p
-    %label{ :for  => 'proposal_email' } Email
-    %input{ :type => 'email', :name => 'proposal[email]', :id => 'proposal_email', :value => @proposal.email, :placeholder => 'email@ruby-lang.org' }
-  
-  %p
-    %label{ :for => 'proposal_text'} What have you got in mind?
-    %textarea{ :name => 'proposal[text]', :id => 'proposal_text', :placeholder => 'This is what I want to speak about ...' }= @proposal.text
-
-  %p
-    %input{ :type => 'submit', :name => 'commit', :value => 'Preview Your Proposal', :class => 'awesome' }
+= partial :proposal
 
