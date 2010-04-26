@@ -1,61 +1,133 @@
+*
+  :margin 0
+  :padding 0
+  :list-style none
+
+html
+  :background #949494 url(/images/html-bg.jpg)
+
 body
+  :background transparent url(/images/body-bg.jpg) top center repeat-x
 
-  // LAYOUT
+#outer_wrapper
+  :background transparent url(/images/header-bg.jpg) top center no-repeat
 
-  #header
-    font-size:  0.7em
-    text-align: center
-    position:   absolute
-    width:      100%
-    top:        30px
+#header
+  :height 185px
+  :width 816px
+  :margin 0 auto
+  :position relative
 
-    h1
-      background-color: white
-      margin:           auto
-      border:           1px solid black
-      height:           100px
-      width:            100px
+  h1
+    :display none
 
   #nav
-    background-color: #333
-    color:            white
-    font-weight:      bold
-    height:           20px
-    width:            60%
-    margin:           auto
-    margin-top:       75px
+    :font 16px helvetica, arial, sans-serif
+    :position absolute
+    :top 185px
+    :left 0
+    :width 816px
+    :text-align center
+    :display none
+    
+    li
+      :display inline
 
-    ul
-      list-style-type: none
-      text-align:      center
+    a
+      :color white
+      :text-decoration none
+      :padding 5px 20px
 
-      li
-        display: inline-block
-        padding: 0 1em 0 1em
+#page
+  :width 816px
+  :margin 0 auto
+  :position relative
+  :font 14px/1.5em helvetica, arial, sans-serif
 
-        &.about
-          margin-right: 150px
+  .top
+    :height 40px
+    :background transparent url(/images/page-top.png) top center no-repeat
 
-        a
-          color: white
-          text-decoration: none
-          z-index:         1000
-          position:        relative
+  .middle
+    :background transparent url(/images/page-middle.png) center center repeat-y
+    :padding 0 30px 40px 30px
 
-  #content
-    border:        1px solid black
-    border-radius: 1em
-    margin:        auto
-    width:         70%
-    padding:       0.5em
-    min-height:    400px
+  .bottom
+    :height 14px
+    :background transparent url(/images/page-bottom.png) top center no-repeat
 
-  // FORM ELEMENTS
+  h1
+    :font bold 30px/1.25em helvetica, arial, sans-serif
+    :letter-spacing -2px
+    :color #c02b23
+    :margin 1em 0 .25em 0
 
-  input, textarea
-    display: block
-    margin-bottom: 1em
+  h1:first-child
+    :margin-top 0
 
-  textarea
-    width:  500px
-    height: 250px
+  p
+    :margin 0 0 1em 0
+    :color #333
+
+  a
+    :color #c02b23
+
+  a:hover
+    :text-shadow #aaa 1px 1px
+
+  dl
+    :margin 0 0 2em 0
+
+    dt
+      :font-weight bold
+      :display block
+
+    dd
+      :display block
+      :margin 0 0 1em 0
+
+  #error_messages
+    :background #333
+    :color white
+    :padding 20px
+    :margin 0 0 1em 0
+
+    h3
+      :font-weight bold
+      :font-size 18px
+      :margin 0 0 .5em 0
+
+  form
+    
+    label
+      :display block
+      :font-weight bold
+      :color black
+    
+    input[type=text], input[type=email], textarea
+      :border 1px solid #ccc
+      :padding 4px
+      :font inherit
+
+    input[type=text], input[type=email]
+      :width 300px
+
+    textarea
+      :width 746px
+      :height 200px
+
+    .awesome
+      :padding 10px 15px 11px !important
+      :font-size 18px !important
+      :font-weight bold !important
+      :margin-right 2px
+
+    .awesome:active
+      :padding 11px 15px 10px !important
+
+    .awesome.cancel
+      :background-color #888 !important
+
+#footer
+  :height 50px
+
