@@ -13,8 +13,7 @@ class SunnyConf < Sinatra::Base
   use Rack::Session::Cookie
   use Rack::Flash
 
-  set :root, File.dirname(__FILE__)
-  set :public, Proc.new { File.join(root, "public") }
+  set :root,   File.dirname(__FILE__)
 
   helpers do
 
