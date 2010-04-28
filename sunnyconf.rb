@@ -13,7 +13,7 @@ class SunnyConf < Sinatra::Base
   use Rack::Session::Cookie
   use Rack::Flash
 
-  set :root,   File.dirname(__FILE__)
+  set :root, File.dirname(__FILE__)
 
   helpers do
 
@@ -29,7 +29,7 @@ class SunnyConf < Sinatra::Base
       raise "You must specify an environment variable named EMAIL_OPTIONS" unless ENV['EMAIL_OPTIONS']
       email_options = eval(ENV['EMAIL_OPTIONS'])
       # Example options:
-      # '{:smtp=>{:tls => true, :host=>"smtp.gmail.com", :domain=>"sunnyconf.com", :port=>"587", :user=>"remi@sunnyconf.com", :password=>"*******", :auth=>:plain}, :via=>:smtp, :from=>"remi@sunnyconf.com"}'
+      # '{:smtp=>{:tls => true, :host=>"smtp.gmail.com", :domain=>"sunnyconf.com", :port=>"587", :user=>"noreply@sunnyconf.com", :password=>"g0sunnyconf555", :auth=>:plain}, :via=>:smtp, :from=>"noreply@sunnyconf.com"}'
       Pony.mail({ :to => email_address, :subject => subject, :body => body }.merge(email_options))
     end
 
@@ -59,6 +59,7 @@ class SunnyConf < Sinatra::Base
       if @proposal.save
         flash[:notice] = 'Thank you for your proposal!'
         email @proposal.email_with_name, 'Thank you for your SunnyConf proposal', 'Thank you for your SunnyConf proposal'
+        email 'aferra@gmail.com', 'A proposal was submitted to SunnyConf.com', 'A proposal was submitted to SunnyConf.com'
         redirect '/'
       else
         render :proposal
