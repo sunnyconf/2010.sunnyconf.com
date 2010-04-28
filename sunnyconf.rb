@@ -13,7 +13,7 @@ class SunnyConf < Sinatra::Base
   use Rack::Session::Cookie
   use Rack::Flash
 
-  set :root, File.dirname(__FILE__)
+  set :root, Dir.pwd
 
   helpers do
 
@@ -42,8 +42,7 @@ class SunnyConf < Sinatra::Base
   get '/' do
     cache!
     @proposal = Proposal.new
-    #haml :index
-    "#{settings.root}, #{settings.public}"
+    haml :index
   end
 
   post '/proposals' do
