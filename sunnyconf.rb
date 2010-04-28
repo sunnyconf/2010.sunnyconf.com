@@ -42,7 +42,8 @@ class SunnyConf < Sinatra::Base
   get '/' do
     cache!
     @proposal = Proposal.new
-    haml :index
+    #haml :index
+    "#{settings.root}, #{settings.public}"
   end
 
   post '/proposals' do

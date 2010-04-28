@@ -18,10 +18,10 @@
       #page
         
         .top
-        .middle
-          - if flash.include? :notice
-            .flash.notice= flash[:notice]
-          = yield
+          .middle
+            - if flash.include? :notice
+              .flash.notice= flash[:notice]
+            = yield
         .bottom
 
       #footer
