@@ -1,8 +1,10 @@
-sinatra
-haml
-datamapper
-jadof
-maruku
-rack-flash
-pony
+sinatra      --version 1.0
+haml         --version 2.2.23
+datamapper   --version 0.10.2
+data_objects --version '>= 0.10.1'
+do_postgres  --version '>= 0.10.1'
+jadof        --version 0.1.6
+maruku       --version 0.6.0
+rack-flash   --version 0.1.1
+pony         --version 0.9.1
 smtp_tls
