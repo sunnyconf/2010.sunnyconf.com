@@ -29,7 +29,7 @@ class SunnyConf < Sinatra::Base
       raise "You must specify an environment variable named EMAIL_OPTIONS" unless ENV['EMAIL_OPTIONS']
       email_options = eval(ENV['EMAIL_OPTIONS'])
       # Example options:
-      # '{:smtp=>{:tls => true, :host=>"smtp.gmail.com", :domain=>"sunnyconf.com", :port=>"587", :user=>"noreply@sunnyconf.com", :password=>"g0sunnyconf555", :auth=>:plain}, :via=>:smtp, :from=>"noreply@sunnyconf.com"}'
+      # '{:smtp=>{:tls => true, :host=>"smtp.gmail.com", :domain=>"sunnyconf.com", :port=>"587", :user=>"noreply@sunnyconf.com", :password=>"******", :auth=>:plain}, :via=>:smtp, :from=>"noreply@sunnyconf.com"}'
       Pony.mail({ :to => email_address, :subject => subject, :body => body }.merge(email_options))
     end
 
@@ -40,7 +40,6 @@ class SunnyConf < Sinatra::Base
   end
 
   get '/' do
-    cache!
     @proposal = Proposal.new
     haml :index
   end
