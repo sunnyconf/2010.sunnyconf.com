@@ -60,7 +60,7 @@ describe 'Creating a Proposal' do
     Proposal.first.text.should  == "I'm going to talk about Sunny Thaper"
   end
 
-  it 'an email is sent after a proposal is submitted' do
+  it 'emails are sent after a proposal is submitted' do
     clear_emails
 
     visit '/'
@@ -73,10 +73,15 @@ describe 'Creating a Proposal' do
 
     click 'Submit Proposal'
 
-    sent_emails.length.should == 1
-    last_email.subject.should == 'Thank you for your SunnyConf proposal'
-    last_email.to.should      == 'Sunny Thaper <sunny@thaper.com>'
-    last_email.body.should include('Thank you for your SunnyConf proposal')
+    sent_emails.length.should == 2
+
+    sent_emails.first.subject.should == 'Thank you for your SunnyConf proposal'
+    sent_emails.first.to.should      == 'Sunny Thaper <sunny@thaper.com>'
+    sent_emails.first.body.should include('Thank you for your SunnyConf proposal')
+
+    sent_emails.last.subject.should == 'A proposal was submitted to SunnyConf.com'
+    sent_emails.last.to.should      == 'info@sunnyconf.com'
+    sent_emails.last.body.should include('A proposal was submitted to SunnyConf.com')
   end
 
 end

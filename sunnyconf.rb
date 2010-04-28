@@ -59,7 +59,7 @@ class SunnyConf < Sinatra::Base
       if @proposal.save
         flash[:notice] = 'Thank you for your proposal!'
         email @proposal.email_with_name, 'Thank you for your SunnyConf proposal', 'Thank you for your SunnyConf proposal'
-        email 'aferra@gmail.com', 'A proposal was submitted to SunnyConf.com', 'A proposal was submitted to SunnyConf.com'
+        email ENV['INCOMING_EMAIL'] || 'info@sunnyconf.com', 'A proposal was submitted to SunnyConf.com', 'A proposal was submitted to SunnyConf.com'
         redirect '/'
       else
         render :proposal
