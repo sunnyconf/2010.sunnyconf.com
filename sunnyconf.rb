@@ -57,8 +57,19 @@ class SunnyConf < Sinatra::Base
     when 'Submit Proposal'
       if @proposal.save
         flash[:notice] = 'Thank you for your proposal!'
-        email @proposal.email_with_name, 'Thank you for your SunnyConf proposal', 'Thank you for your SunnyConf proposal'
-        email ENV['INCOMING_EMAIL'] || 'info@sunnyconf.com', 'A proposal was submitted to SunnyConf.com', 'A proposal was submitted to SunnyConf.com'
+        
+        # Send thank you to submitter
+        to      = @proposal.email_with_name
+        subject = 'Thank you for your SunnyConf proposal'
+        body    = 'Thank you for your SunnyConf proposal'
+        email to, subject, body
+        
+        # Notification to SunnyConf Team
+        to      = ENV['INCOMING_EMAIL'] || 'info@sunnyconf.com'
+        subject = "#{@proposal.name} submitted a proposal for SunnyConf"
+        body    = "From: #{@proposal.name} <#{@proposal.email}>\n\n#{@proposal.text}"
+        email to, subject, body
+
         redirect '/'
       else
         render :proposal

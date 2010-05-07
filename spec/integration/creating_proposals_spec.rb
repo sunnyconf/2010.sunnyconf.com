@@ -74,14 +74,17 @@ describe 'Creating a Proposal' do
     click 'Submit Proposal'
 
     sent_emails.length.should == 2
-
+    
+    # Thank you for Submitter
     sent_emails.first.subject.should == 'Thank you for your SunnyConf proposal'
     sent_emails.first.to.should      == 'Sunny Thaper <sunny@thaper.com>'
     sent_emails.first.body.should include('Thank you for your SunnyConf proposal')
-
-    sent_emails.last.subject.should == 'A proposal was submitted to SunnyConf.com'
+    
+    # Notification for SunnyConf Team
+    proposal = Proposal.last
+    sent_emails.last.subject.should == "#{proposal.name} submitted a proposal for SunnyConf"
     sent_emails.last.to.should      == 'info@sunnyconf.com'
-    sent_emails.last.body.should include('A proposal was submitted to SunnyConf.com')
+    sent_emails.last.body.should include(proposal.name, proposal.email, proposal.text)
   end
 
 end
