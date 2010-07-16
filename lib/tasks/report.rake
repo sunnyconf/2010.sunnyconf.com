@@ -7,8 +7,16 @@ namespace :sunnyconf do
 
   desc "Dump reports"
   task :reports => :environment do
-    require 'pp'
-    pp Proposal.all
+    Proposal.all.each do |x|
+      html =<<HTML
+<p>
+  <strong>#{x.name} (#{x.email})</strong>
+</p>
+<p>
+  #{x.text}
+</p>
+HTML
+    end
   end
   
 end
