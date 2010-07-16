@@ -1,7 +1,7 @@
 namespace :sunnyconf do
 
   desc "Dump reports"
-  task :reports => :environment do
+  task :reports do
     puts Proposal.count
   end
   
