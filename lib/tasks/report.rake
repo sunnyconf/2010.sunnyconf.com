@@ -1,8 +1,13 @@
 namespace :sunnyconf do
 
+  task :environment do
+    require 'sunnyconf'
+  end
+
   desc "Dump reports"
-  task :reports do
-    puts Proposal.count
+  task :reports => :environment do
+    require 'pp'
+    pp Proposal.all
   end
   
 end
