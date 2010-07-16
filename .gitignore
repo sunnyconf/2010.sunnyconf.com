@@ -2,3 +2,4 @@
 *.sw?
 capybara-*.html
 *.sqlite*
+log
