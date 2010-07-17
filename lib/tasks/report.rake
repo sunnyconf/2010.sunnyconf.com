@@ -31,6 +31,7 @@ HTML
   puts footer
   end
   
+  desc "Dump JSON"
   task :reports_json => :environment do
     puts Proposal.all.to_json
   end
