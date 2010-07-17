@@ -19,9 +19,7 @@ HTML
   <strong>#{x.name} (#{x.email})</strong>
 </p>
 <p>
-  <pre>
     #{x.text}
-  </pre>
 </p>
 HTML
       puts html
