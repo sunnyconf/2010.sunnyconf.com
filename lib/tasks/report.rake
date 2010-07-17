@@ -23,7 +23,7 @@ namespace :sunnyconf do
 HTML
     puts header
     Proposal.all.each do |x|
-      next if [1,2,3].include x.id
+      next if [1,2,3].include?(x.id)
       html =<<HTML
 <p>
   <strong>#{x.name} (#{x.email})</strong>
