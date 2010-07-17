@@ -20,13 +20,14 @@ namespace :sunnyconf do
 <html>
 <head><title>SunnyConf Proposals</title></head>
 <body>
+<ol>
 HTML
     puts header
     Proposal.all.each do |x|
       next if [1,2,3].include?(x.id)
       html =<<HTML
 <p>
-  <strong>#{x.name} (#{x.email})</strong>
+  <li><strong>#{x.name} (#{x.email})</strong></li>
 </p>
 <p>
     #{simple_format(x.text)}
@@ -35,6 +36,7 @@ HTML
       puts html
     end
     footer =<<HTML
+</ol>
 </body>
 </html>
 HTML
