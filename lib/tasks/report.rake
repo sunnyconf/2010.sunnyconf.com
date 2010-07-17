@@ -7,6 +7,12 @@ namespace :sunnyconf do
 
   desc "Dump reports"
   task :reports => :environment do
+    header =<<HTML
+<html>
+<head><title>SunnyConf Proposals</title></head>
+<body>
+HTML
+    puts header
     Proposal.all.each do |x|
       html =<<HTML
 <p>
@@ -18,6 +24,11 @@ namespace :sunnyconf do
 HTML
       puts html
     end
+    footer =<<HTML
+</body>
+</html>
+HTML
+  puts footer
   end
   
 end
