@@ -31,4 +31,8 @@ HTML
   puts footer
   end
   
+  task :reports_json => :environment do
+    puts Proposal.all.to_json
+  end
+  
 end
