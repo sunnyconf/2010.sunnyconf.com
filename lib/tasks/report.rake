@@ -16,6 +16,7 @@ namespace :sunnyconf do
   #{x.text}
 </p>
 HTML
+      puts html
     end
   end
   
