@@ -14,6 +14,7 @@ namespace :sunnyconf do
     DataMapper.setup :default, ENV['DATABASE_URL']
   end
 
+  # Run on heroku via heroku rake sunnyconf:reports
   desc "Dump reports"
   task :reports => :environment do
     header =<<HTML
