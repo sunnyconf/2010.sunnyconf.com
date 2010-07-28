@@ -34,7 +34,11 @@ class SunnyConf < Sinatra::Base
     end
 
     def partial(page, options={})
-      haml page, options.merge!(:layout => false)
+      if options.delete(:erb)
+        erb page, options.merge!(:layout => false)
+      else
+        haml page, options.merge!(:layout => false)
+      end
     end
 
   end
