@@ -1,6 +1,6 @@
 %h1 Coming September 25th!
 
-%p We're still working out the details, but here's what we can say for sure:
+= partial :registration, :erb => true
 
 %ul
   %li This will be a grassroots, single-track event by Ruby lovers for ruby lovers.
@@ -8,6 +8,9 @@
   %li Our speakers will be awesome.
   %li Registration will be very reasonable.
   %li Hacking will occur.
+
+%br
+%br
 
 %p.padding-bottom
   Questions? 
@@ -17,5 +20,27 @@
   %a{ :href => '/documents/sponsors.pdf',      :class => 'awesome' } Sponsor SunnyConf
   %a{ :href => 'http://twitter.com/sunnyconf', :class => 'awesome' } Follow Us On Twitter
 
-= partial :proposal
+#speakers
 
+  %h1 Speakers
+
+  %p
+    Our roster is done! Starting July 28th, we'll be announcing a new talk every week day.
+
+  .speaker
+    %h2 Brian Bommarito: On Testing
+    
+    %p
+      "Talk with be technology agnostic, so it will be a discussion of testing, 
+      and how to implement a testing workflow for a development team, including 
+      unit testing, continuous integration, how to deal with tests that will 
+      be broken during development of features and so on.
+    
+    %p 
+      The talk will also include a demonstration of testing a sinatra application 
+      using rspec and cucumber, as well as demonstration of a Hudson system 
+      for doing CI."
+
+    %p
+      %a{ :href => 'http://brianbommarito.org/' } Visit brianbommarito.org
+    
