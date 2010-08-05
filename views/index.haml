@@ -27,7 +27,7 @@
   %p
     Our roster is done! Starting July 28th, we'll be announcing a new talk every weekday.
 
-  - if true || Time.now > Time.parse('2010-08-06 12:00pm MST')
+  - if Time.now > Time.parse('2010-08-06 12:00pm MST')
     .speaker
       %h2 Keynote - Jeremy Ashkenas on Code is a Commons
 
