@@ -27,11 +27,29 @@
   %p
     Our roster is done! Starting July 28th, we'll be announcing a new talk every weekday.
 
-  - if Time.now > Time.parse('2010-08-06 6:00am MST')
+  - if true || Time.now > Time.parse('2010-08-06 12:00pm MST')
     .speaker
-      %h2 Jeremy Ashkenas - Keynote
+      %h2 Keynote - Jeremy Ashkenas on Code is a Commons
 
-      %p ...
+      %p
+        A talk about how the business of writing code is unlike any other field of
+        human endeavor.
+      
+      %p
+        %a{ :href => 'http://ashkenas.com/'   } Visit ashkenas.com
+
+    - if false
+      %ul
+        %li Isn't it strange how with code, the more you give away, the more you have?
+        %li Brief exposition of the Tragedy of the Commons, and Prisoner's Dilemma.
+        %li Unlike other fruits of labor (including intellectual), code is infinitely shareable, and infinitely reusable.
+        %li How does this make our profession qualitatively different?
+        %li With a regular day's work, you create a small thing of value, to be hoarded or to be sold. With a day of writing code, you contribute a small piece to the potentially eternal body of code literature.
+        %li "cat", "http", "ssh", "unicode", "quicksort" -- as common examples.
+        %li Parallels to legislation.
+        %li Talk about reusability as not just an engineering value, but a moral value.
+        %li Our experience at DocumentCloud releasing everything as open-source.
+        %li Wrap up with a bit about sitting down to work with fresh eyes. No matter how mundane the task may seem -- you are reifying patterns of thought into code, adding to the ever-growing commons of practical knowledge.
 
   - if Time.now > Time.parse('2010-08-06 6:00am MST')
     .speaker
@@ -58,9 +76,9 @@
         %li Community: you are not isolated, participation and giving back are core values of the large Ruby/Rails and OS community
 
       %p
-        %a{ :href => 'http://hashrocket.com/people/view/les-hill/'   } Visit Les's Profile on Hash Rocket
+        %a{ :href => 'http://hashrocket.com/people/view/les-hill/'   } Visit Les's Profile on Hashrocket
         |
-        %a{ :href => 'http://hashrocket.com/people/view/jim-remsik/' } Visit Jim's Profile on Hash Rocket
+        %a{ :href => 'http://hashrocket.com/people/view/jim-remsik/' } Visit Jim's Profile on Hashrocket
 
   - if Time.now > Time.parse('2010-08-05 6:00am MST')
     .speaker
@@ -107,7 +125,7 @@
       %h2 David Keener on Leveraging Rails to Build Facebook Applications
 
       %p
-        This presentation is a distillation of some of the practical tactics that Dave's 
+        This talk is a distillation of some of the practical tactics that Dave's 
         development team at MetroStar Systems has used to create highly successful FaceBook 
         applications using Rails, including real-life systems like PollCast and Iran Voices. 
         FaceBook is the world's largest social network, with over 400 million members. The 
@@ -131,7 +149,7 @@
       %h2 Andre Arko on Bundler: Painless Dependency Management
 
       %p
-        "The new Bundler being released alongside Rails 3 has been designed to fix all of 
+        The new Bundler being released alongside Rails 3 has been designed to fix all of 
         your dependency problems. It makes using dependencies easy and reliable at the same 
         time. Bundler can handle your your Rails gem plugins, your application's 
         dependencies, and even your dependencies' dependencies, all automatically. 
@@ -145,7 +163,7 @@
         cover using the Bundler with Rails 3, Rails 2, Sinatra, and any generic ruby 
         application. He will also talk about about his experiences helping maintain the 
         project, how to resolve the most common Bundler issues, and where the Bundler 
-        is headed in the future."
+        is headed in the future.
 
       %p
         %a{ :href => 'http://arko.net/' } Visit arko.net
@@ -175,7 +193,7 @@
     %h2 Alex Sharp on Refactoring
 
     %p
-      "This talk will focus solving difficult refactoring problems in a real world
+      This talk will focus solving difficult refactoring problems in a real world
       codebase. I will show actual code and demonstrate specific refactoring
       techniques to show how specific problems were solved. This is not a conceptual
       talk, and thus we will look at LOTS of real code. You've been warned!
@@ -190,7 +208,7 @@
 
     %p
       Attendees should expect to learn core refactoring strategies and techniques, 
-      as well as techniques that can be frequently applied in refactoring web applications."
+      as well as techniques that can be frequently applied in refactoring web applications.
 
     %p
       %a{ :href => 'http://alexjsharp.com/' } Visit alexsharp.com
@@ -199,7 +217,7 @@
     %h2 Brian Bommarito on Testing
     
     %p
-      This presentation will be a technology agnostic discussion on testing web applications. 
+      This talk will be a technology agnostic discussion on testing web applications. 
       We will learn how to create a testing workflow for a development team, the basics of 
       unit testing, using a continuous integration tool, and dealing with broken tests during 
       feature development.
