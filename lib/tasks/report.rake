@@ -52,7 +52,7 @@ HTML
   desc "Dump emails"
   task :reports_email => :environment do
     Proposal.all.each do |x|
-      puts "\"#{x.name}\" &lt;#{x.email}&gt;"
+      puts "\"#{x.name}\" <#{x.email}>"
     end
   end
   
