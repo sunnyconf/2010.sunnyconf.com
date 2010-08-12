@@ -48,5 +48,12 @@ HTML
   task :reports_json => :environment do
     puts Proposal.all.to_json
   end
+
+  desc "Dump emails"
+  task :reports_email => :environment do
+    Proposal.all.each do |e|
+      puts "\"#{x.name}\" &lt;#{x.email}&gt;"
+    end
+  end
   
 end
