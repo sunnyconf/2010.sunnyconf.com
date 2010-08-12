@@ -28,7 +28,7 @@ HTML
       next if [1,2,3].include?(x.id)
       html =<<HTML
 <p>
-  <li><strong>"#{x.name}" <#{x.email}></strong></li>
+  <li><strong>"#{x.name}" &lt;#{x.email}&gt;</strong></li>
 </p>
 <p>
     #{simple_format(x.text)}
