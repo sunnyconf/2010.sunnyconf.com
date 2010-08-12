@@ -26,13 +26,13 @@ body
     :display none
 
   #nav
-    :font 16px helvetica, arial, sans-serif
+    :font bold 24px/1.25em helvetica, arial, sans-serif
+    :letter-spacing -1px
     :position absolute
     :top 185px
     :left 0
     :width 816px
     :text-align center
-    :display none
     
     li
       :display inline
@@ -40,11 +40,11 @@ body
     a
       :color white
       :text-decoration none
-      :padding 5px 20px
+      :padding 0 20px
 
 #page
   :width 816px
-  :margin 0 auto
+  :margin 35px auto 0 auto
   :position relative
   :font 14px/1.5em helvetica, arial, sans-serif
 
@@ -151,16 +151,21 @@ body
 #speakers
   .speaker
     :background #f1f1f1
-    :padding 20px
+    :padding 15px
     :border 1px solid #ddd
-    :margin 0 0 1em 0
+    :margin 0 0 .5em 0
     +rounded_corners( 5px )
-    
+
     h2
       :font bold 24px/1.25em helvetica, arial, sans-serif
       :letter-spacing -1px
       :color #c02b23
-      :margin 0 0 .25em 0
+
+    h2.hover
+      :color #f00
+
+    .inner
+      :padding-top 1em
 
     ul
       :font-weight normal
@@ -171,6 +176,18 @@ body
   :margin 0 0 0 30px
   :position relative
   :top -50px
+
+#sponsors
+  
+  h2
+    :font bold 24px/1.25em helvetica, arial, sans-serif
+    :letter-spacing -1px
+    :color #ccc
+    :margin 1em 0 .5em 0
+
+  a
+    img
+      :border none
 
 #footer
   :height 50px

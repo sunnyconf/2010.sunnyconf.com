@@ -24,13 +24,11 @@
 
   %h1 Speakers
 
-  %p
-    Our roster is done! Starting July 28th, we'll be announcing a new talk every weekday.
+  %p We're proud to present our lineup of speakers.
 
-  - if Time.now > Time.parse('2010-08-06 12:00pm MST')
-    .speaker
-      %h2 Keynote -- Jeremy Ashkenas: Code is a Commons
-
+  .speaker
+    %h2 Keynote -- Jeremy Ashkenas: Code is a Commons
+    .inner
       %p
         Isn't it strange how with open-source code, the more you give away,
         the more you have? Writing software is qualitatively unlike any other
@@ -39,26 +37,11 @@
         and if it makes any sense to treat works of code as literature.
       
       %p
-        %a{ :href => 'http://github.com/jashkenas'   } Visit Jeremy's GitHub Profile
+        %a{ :href => 'http://github.com/jashkenas' } Visit Jeremy's GitHub Profile
 
-    - if false
-      %ul
-        %li Isn't it strange how with code, the more you give away, the more you have?
-        %li Brief exposition of the Tragedy of the Commons, and Prisoner's Dilemma.
-        %li Unlike other fruits of labor (including intellectual), code is infinitely shareable, and infinitely reusable.
-        %li How does this make our profession qualitatively different?
-        %li With a regular day's work, you create a small thing of value, to be hoarded or to be sold. With a day of writing code, you contribute a small piece to the potentially eternal body of code literature.
-        %li "cat", "http", "ssh", "unicode", "quicksort" -- as common examples.
-        %li Parallels to legislation.
-        %li Talk about reusability as not just an engineering value, but a moral value.
-        %li Our experience at DocumentCloud releasing everything as open-source.
-        %li Wrap up with a bit about sitting down to work with fresh eyes. No matter how mundane the task may seem -- you are reifying patterns of thought into code, adding to the ever-growing commons of practical knowledge.
-
-  - if Time.now > Time.parse('2010-08-06 6:00am MST')
-    .speaker
-      %h2
-        Les Hill & Jim Remsik on How to Build a Team
-
+  .speaker
+    %h2 Les Hill & Jim Remsik on How to Build a Team
+    .inner
       %p
         Hashrocket began as a small four person shop aiming to build products
         and get rich doing the same. Something happened along the way and we
@@ -85,10 +68,9 @@
       %p
         %a{ :href => 'http://rubyology.com/podcasts/show/87' } Rubyology interview with Les and Jim about their SunnyConf talk
 
-  - if Time.now > Time.parse('2010-08-05 6:00am MST')
-    .speaker
-      %h2 Charlie Nutter on JRuby: The Way to Enterprise-Friendly Ruby
-
+  .speaker
+    %h2 Charlie Nutter on JRuby: The Way to Enterprise-Friendly Ruby
+    .inner
       %p
         You know that JRuby is Ruby for the JVM. But did you know you can
         deploy Ruby applications anywhere Java applications can go? Did you
@@ -109,10 +91,9 @@
       %p
         %a{ :href => 'http://blog.headius.com/' } Visit blog.headius.com
 
-  - if Time.now > Time.parse('2010-08-04 6:00am MST')
-    .speaker
-      %h2 Blake Mizerany on Sinatra Extensions
-
+  .speaker
+    %h2 Blake Mizerany on Sinatra Extensions
+    .inner
       %p
         Sinatra extensions. Learn them. Love them.
 
@@ -125,10 +106,9 @@
       %p
         %a{ :href => 'http://github.com/bmizerany' } Visit Blake's GitHub Profile
 
-  - if Time.now > Time.parse('2010-08-03 6:00am MST')
-    .speaker
-      %h2 David Keener on Leveraging Rails to Build Facebook Applications
-
+  .speaker
+    %h2 David Keener on Leveraging Rails to Build Facebook Applications
+    .inner
       %p
         This talk is a distillation of some of the practical tactics that Dave's 
         development team at MetroStar Systems has used to create highly successful FaceBook 
@@ -149,10 +129,9 @@
       %p
         %a{ :href => 'http://keenertech.com/' } Visit keenertech.com
 
-  - if Time.now > Time.parse('2010-08-02 6:00am MST')
-    .speaker
-      %h2 Andre Arko on Bundler: Painless Dependency Management
-
+  .speaker
+    %h2 Andre Arko on Bundler: Painless Dependency Management
+    .inner
       %p
         The new Bundler being released alongside Rails 3 has been designed to fix all of 
         your dependency problems. It makes using dependencies easy and reliable at the same 
@@ -172,64 +151,72 @@
 
       %p
         %a{ :href => 'http://arko.net/' } Visit arko.net
-        
-
+      
   .speaker
     %h2 Luigi Montanez on Civic Coding
+    .inner
+      %p
+        How can Ruby change cities, states, and countries for the better? Last year, we saw 
+        an explosion of interest around government transparency. The Open Government movement, 
+        spearheaded by open source developers, seeks to make government more accountable 
+        and responsible by turning open government data into citizen-focused, 
+        civic-minded applications.
+        
+      %p
+        This talk will guide you through the Gov 2.0 landscape. You'll learn about the data 
+        sets and APIs available freely available for your use, the tools and skills you'll 
+        need to be a successful civic hacker, and you'll get a thorough overview of the 
+        current civic apps out there. Civic hacking will enhance your open source portfolio 
+        while making a difference in your community and country.
 
-    %p
-      How can Ruby change cities, states, and countries for the better? Last year, we saw 
-      an explosion of interest around government transparency. The Open Government movement, 
-      spearheaded by open source developers, seeks to make government more accountable 
-      and responsible by turning open government data into citizen-focused, 
-      civic-minded applications.
-      
-    %p
-      This talk will guide you through the Gov 2.0 landscape. You'll learn about the data 
-      sets and APIs available freely available for your use, the tools and skills you'll 
-      need to be a successful civic hacker, and you'll get a thorough overview of the 
-      current civic apps out there. Civic hacking will enhance your open source portfolio 
-      while making a difference in your community and country.
-
-    %p
-      %a{ :href => 'http://luigimontanez.com/' } Visit luigimontanez.com
+      %p
+        %a{ :href => 'http://luigimontanez.com/' } Visit luigimontanez.com
 
   .speaker
     %h2 Alex Sharp on Refactoring
+    .inner
+      %p
+        This talk will focus solving difficult refactoring problems in a real world
+        codebase. I will show actual code and demonstrate specific refactoring
+        techniques to show how specific problems were solved. This is not a conceptual
+        talk, and thus we will look at LOTS of real code. You've been warned!
+      
+      %p In this session, we will cover the following:
+      
+      %ol
+        %li Educate audience on core principles of refactoring
+        %li Present conceptual framework for approaching large refactorings
+        %li Demonstrate common refactoring techniques, such as extract method, deprecate method, and characterization testing
+        %li Identify common anti-patterns in web applications and specific refactoring strategies
 
-    %p
-      This talk will focus solving difficult refactoring problems in a real world
-      codebase. I will show actual code and demonstrate specific refactoring
-      techniques to show how specific problems were solved. This is not a conceptual
-      talk, and thus we will look at LOTS of real code. You've been warned!
-    
-    %p In this session, we will cover the following:
-    
-    %ol
-      %li Educate audience on core principles of refactoring
-      %li Present conceptual framework for approaching large refactorings
-      %li Demonstrate common refactoring techniques, such as extract method, deprecate method, and characterization testing
-      %li Identify common anti-patterns in web applications and specific refactoring strategies
+      %p
+        Attendees should expect to learn core refactoring strategies and techniques, 
+        as well as techniques that can be frequently applied in refactoring web applications.
 
-    %p
-      Attendees should expect to learn core refactoring strategies and techniques, 
-      as well as techniques that can be frequently applied in refactoring web applications.
-
-    %p
-      %a{ :href => 'http://alexjsharp.com/' } Visit alexsharp.com
+      %p
+        %a{ :href => 'http://alexjsharp.com/' } Visit alexsharp.com
 
   .speaker
     %h2 Brian Bommarito on Testing
-    
-    %p
-      This talk will be a technology agnostic discussion on testing web applications. 
-      We will learn how to create a testing workflow for a development team, the basics of 
-      unit testing, using a continuous integration tool, and dealing with broken tests during 
-      feature development.
-    
-    %p 
-      This talk will also include a demo on how to test a Sinatra application with RSpec, 
-      Cucumber and Hudson&mdash;a continuous integration tool.
+    .inner
+      %p
+        This talk will be a technology agnostic discussion on testing web applications. 
+        We will learn how to create a testing workflow for a development team, the basics of 
+        unit testing, using a continuous integration tool, and dealing with broken tests during 
+        feature development.
+      
+      %p 
+        This talk will also include a demo on how to test a Sinatra application with RSpec, 
+        Cucumber and Hudson&mdash;a continuous integration tool.
 
-    %p
-      %a{ :href => 'http://brianbommarito.org/' } Visit brianbommarito.org
+      %p
+        %a{ :href => 'http://brianbommarito.org/' } Visit brianbommarito.org
+
+#sponsors
+
+  %h1 Sponsors
+
+  %h2 Bronze Level
+  .sponsor
+    %a{ :href => 'http://chargify.com/' }
+      %img{ :src => '/images/sponsors/chargify.png' }
