@@ -1,0 +1,18 @@
+login: &login
+  access_key_id: <%= ENV['S3_KEY'] %>
+  secret_access_key: <%= ENV['S3_SECRET'] %>
+
+development:
+  bucket_name: sunnyconfcms_development
+  <<: *login
+  distribution_domain: s3.amazonaws.com/sunnyconfcms_development
+
+test:
+  bucket_name: sunnyconfcms_test
+  <<: *login
+  distribution_domain: s3.amazonaws.com/sunnyconfcms_test
+
+production:
+  bucket_name: sunnyconfcms_production
+  <<: *login
+  distribution_domain: s3.amazonaws.com/sunnyconfcms_production

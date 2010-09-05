@@ -1,0 +1,11 @@
+common: &common
+  arkayne_profile_token: <%= ENV['ARKAYNE_PROFILE_TOKEN'] %>
+
+development:
+  <<: *common
+
+test:
+  <<: *common
+
+production:
+  <<: *common

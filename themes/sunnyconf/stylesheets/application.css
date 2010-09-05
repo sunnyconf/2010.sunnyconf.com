@@ -1,0 +1,21 @@
+@import url('/stylesheets/refinery/application.css');
+
+/*
+    Override default refinery application CSS below.
+    Formatting applies to all frontend.
+*/
+
+#body_content_left {
+  float: left;
+  width: 500px;
+}
+
+#body_content_right {
+  float: right;
+  width: 200px;
+}
+
+div.sidenav {
+  float: right;
+  width: 200px;
+}

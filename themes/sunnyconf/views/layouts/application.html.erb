@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+
+<html>
+  <head>
+    <title><%= browser_title(yield(:title)) %></title>
+    <%= render :partial => 'shared/google_analytics' unless local_request? %>
+    <%= # IE only HTML5 enabling script:
+      "<script type='text/javascript'>#{render :partial => '/shared/html5_for_ie.js'}</script>" if request.env['HTTP_USER_AGENT'] =~ /MSIE/ %>
+    <%= javascript_include_tag "jquery", "jquery.scrollTo.js",  "jquery.localscroll.js", :theme => true %>
+    <%= javascript_include_tag "application", :theme => true %>
+    <%= stylesheet_link_tag "awesome-buttons", :theme => true %>
+
+    <%= stylesheet_link_tag "application", :theme => true %>
+    <%= stylesheet_link_tag "formatting", :theme => true %>
+    <%= stylesheet_link_tag "home", :theme => true %>
+  
+    <%= "<meta name=\"keywords\" content=\"#{h @meta.meta_keywords}\" />" if @meta.meta_keywords.present? %>
+    <%= "<meta name=\"description\" content=\"#{h @meta.meta_description}\" />" if @meta.meta_description.present? -%>
+    <%= "<!--[if IE 7]>#{stylesheet_link_tag 'ie7'}<![endif]-->" if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <%= yield :head_libraries %>
+    <%= yield :head %>
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-18241702-1']);
+      _gaq.push(['_setDomainName', '.sunnyconf.com']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+  </head>
+  <body>
+    <%= render :partial => "/shared/site_bar", :locals => {:exclude_jquery => true }%>
+    <div id='outer_wrapper'>
+      <div id='header'>
+        <h1>
+          <a href="/">Arizona's First Ruby conference - SunnyConf</a>
+        </h1>
+        <!--
+        <%#= render :partial => "/shared/header" %>
+        -->
+        <div id="nav">
+          <ul>
+            <li><a href="/#speakers">Speakers</a></li>
+            <li><a href="/#sponsors">Sponsors</a></li>
+            <li><a href="http://sunnyconf.eventbrite.com/?ref=ecount">Register</a></li>
+        </div>
+      </div>
+      <div id='page'>
+        <div class="top"></div>
+        <div class="middle">
+          <%- if flash.include? :notice %>
+            <div class="flash notice">
+              <%= flash[:notice] %>
+            </div>
+          <% end %>
+          <%= yield %>
+        </div>
+        
+        <div class="bottom">
+        </div>
+      </div>
+      <div id='footer'>
+        Copyright &copy; <%= Time.now.year %> <%= RefinerySetting[:site_name] %>
+      </div>
+    </div>
+  </body>
+</html>

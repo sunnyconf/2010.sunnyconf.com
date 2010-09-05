@@ -1,0 +1,176 @@
+@import url('/stylesheets/refinery/home.css');
+/* 
+    Override default refinery homepage styles here. 
+    These only apply to the homepage of your site. 
+*/
+
+
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  background: #949494 url(/theme/images/html-bg.jpg); }
+
+body {
+  background: transparent url(/theme/images/body-bg.jpg) top center repeat-x; }
+
+#outer_wrapper {
+  background: transparent url(/theme/images/header-bg.jpg) top center no-repeat; }
+
+#header {
+  height: 185px;
+  width: 816px;
+  margin: 0 auto;
+  position: relative; }
+  #header h1 {
+    display: none; }
+  #header #nav {
+    font: bold 24px/1.25em helvetica, arial, sans-serif;
+    letter-spacing: -1px;
+    position: absolute;
+    top: 185px;
+    left: 0;
+    width: 816px;
+    text-align: center; }
+    #header #nav li {
+      display: inline; }
+    #header #nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0 20px; }
+
+#page {
+  width: 816px;
+  margin: 15px auto 0 auto;
+  position: relative;
+  font: 14px/1.5em helvetica, arial, sans-serif; }
+  #page .top {
+    height: 40px;
+    background: transparent url(/theme/images/page-top.png) top center no-repeat; }
+  #page .middle {
+    background: transparent url(/theme/images/page-middle.png) center center repeat-y;
+    padding: 0 30px 40px 30px; }
+  #page .bottom {
+    height: 14px;
+    background: transparent url(/theme/images/page-bottom.png) top center no-repeat; }
+  #page h1 {
+    font: bold 30px/1.25em helvetica, arial, sans-serif;
+    letter-spacing: -2px;
+    color: #c02b23;
+    padding-top: 10px; }
+  #page .middle > h1:first-child {
+    margin-top: 0;
+    border-top: none; }
+  #page p {
+    margin: 0 0 1em 0;
+    color: #333; }
+  #page p.padding-bottom {
+    padding-bottom: 1.2em; }
+  #page a {
+    color: #c02b23; }
+  #page ul {
+    margin: 0 0 1em 40px;
+    font-size: 18px;
+    font-weight: bold; }
+  #page ol {
+    margin: 0 0 1em 40px; }
+  #page a:hover {
+    text-shadow: #aaa 1px 1px; }
+  #page dl {
+    margin: 0 0 2em 0; }
+    #page dl dt {
+      font-weight: bold;
+      display: block; }
+    #page dl dd {
+      display: block;
+      margin: 0 0 1em 0; }
+  #page #error_messages {
+    background: #333;
+    color: white;
+    padding: 20px;
+    margin: 0 0 1em 0; }
+    #page #error_messages h3 {
+      font-weight: bold;
+      font-size: 18px;
+      margin: 0 0 .5em 0; }
+  #page form label {
+    display: block;
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    margin: 0 0 5px 0; }
+  #page form input[type=text], #page form input[type=email], #page form textarea {
+    border: 1px solid #ccc;
+    padding: 4px;
+    font: inherit; }
+  #page form input[type=text], #page form input[type=email] {
+    width: 300px; }
+  #page form textarea {
+    width: 746px;
+    height: 200px; }
+  #page .awesome {
+    padding: 10px 15px 11px !important;
+    font-size: 18px !important;
+    font-weight: bold !important;
+    margin-right: 2px; }
+  #page .awesome:active {
+    padding: 11px 15px 10px !important; }
+  #page .awesome.cancel {
+    background-color: #888 !important; }
+
+#speakers .speaker {
+  background: #f1f1f1;
+  padding: 15px;
+  border: 1px solid #ddd;
+  margin: 0 0 .5em 0;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px; }
+  #speakers .speaker h2 {
+    font: bold 24px/1.25em helvetica, arial, sans-serif;
+    letter-spacing: -1px;
+    color: #c02b23; }
+  #speakers .speaker h2.hover {
+    color: #f00; }
+  #speakers .speaker .inner {
+    padding-top: 1em; }
+  #speakers .speaker ul {
+    font-weight: normal;
+    font-size: inherit; }
+
+#registration {
+  float: right;
+  margin: 0 0 0 30px;
+  position: relative;
+}
+
+#sponsors h2 {
+  font: bold 24px/1.25em helvetica, arial, sans-serif;
+  letter-spacing: -1px;
+  color: #ccc;
+  margin: 1em 0 .5em 0; }
+#sponsors a img {
+  border: none; }
+
+#footer {
+  height: 50px;
+  width: 816px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 0 30px 0;
+  font: bold 14px helvetica, arial, sans-serif; }
+  
+#speakers_side h2 {
+}
+  
+ul#menu {
+  list-style: none;
+  margin-left: 15px;
+}
+  
+ul#menu li {
+  font: bold 14px/1.25em helvetica, arial, sans-serif;
+  padding-top: 5px;
+}
