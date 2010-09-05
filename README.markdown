@@ -8,14 +8,27 @@ Downloading and running
 
     git clone git://github.com/sunnyconf/sunnyconf.com.git
     cd sunnyconf.com
-    cat .gems | xargs gem install # or view .gems to see what gems you need to have
-    rackup config.ru
-    open http://localhost:9292/
+    bundle install
+    ./script/server
+    open http://localhost:3000/
+    
+Pushing to staging, production, and GitHub
+------------------------------------------
 
-Running the specs
------------------
+    You'll need be added to the repos in all three cases
 
-    gem install rspec capybara factory_girl factory_girl_extensions
-    spec spec/
+    staging: 
+      sunnyconf-staging.heroku.com
+      git remote add staging git@heroku.com:sunnyconf-staging.git
+      git push staging master
+      
+    production:
+      sunnyconf.heroku.com
+      git remote add heroku git@heroku.com:sunnyconf.git
+      git push heroku master
+    
+    github.com/sunnyconf/sunnyconf.com
+      git remote add origin git@github.com:sunnyconf/sunnyconf.com.git
+      git push origin master
 
 [sunnyconf]: http://sunnyconf.com
