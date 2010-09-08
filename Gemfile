@@ -17,7 +17,8 @@ gem 'pg' #db_adapter=postgresql
 gem 'aws-s3'
 
 #===REFINERY REQUIRED GEMS===
-gem 'acts_as_indexed',  '= 0.6.4', :require => 'acts_as_indexed'
+# gem 'acts_as_indexed',  '= 0.6.4', :require => 'acts_as_indexed'
+gem 'acts_as_indexed', :git => 'git://github.com/parndt/acts_as_indexed.git'
 gem 'authlogic',        '= 2.1.6', :require => 'authlogic'
 gem 'friendly_id',      '= 3.1.3', :require => 'friendly_id'
 gem 'rails',            '= 2.3.8'
