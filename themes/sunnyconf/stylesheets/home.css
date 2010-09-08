@@ -178,3 +178,9 @@ ul#menu li {
 ul#menu li.logo {
   padding: 10px 0 10px 0;
 }
+
+.speaker_logo {
+  float: left;
+  width: 100px;
+  padding: 5px 10px 5px 0;
+}
