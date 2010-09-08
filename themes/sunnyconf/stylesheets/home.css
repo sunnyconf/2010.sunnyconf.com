@@ -173,4 +173,5 @@ ul#menu {
 ul#menu li {
   font: bold 14px/1.25em helvetica, arial, sans-serif;
   padding-top: 5px;
+  line-height: 35px;
 }
