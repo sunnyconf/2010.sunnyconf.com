@@ -39,9 +39,7 @@ dependencies:
   acts_as_indexed: 
     group: 
     - :default
-    version: = 0.6.4
-    require: 
-    - acts_as_indexed
+    version: ">= 0"
   rspec: 
     group: 
     - :test
@@ -120,7 +118,8 @@ specs:
 - activeresource: 
     version: 2.3.8
 - acts_as_indexed: 
-    version: 0.6.4
+    version: 0.6.5
+    source: 0
 - authlogic: 
     version: 2.1.6
 - builder: 
@@ -197,7 +196,11 @@ specs:
     version: 0.3.2
 - will_paginate: 
     version: 2.3.14
-hash: 34a5b0f46833f5fe4a41c7e8c31dad52ba6b043c
+hash: f12f0915a6ae3afdbcb5ca7ee94b2395435eaac0
 sources: 
+- Git: 
+    uri: git://github.com/parndt/acts_as_indexed.git
+    git: git://github.com/parndt/acts_as_indexed.git
+    ref: 9a84dc0ea6a4e5a17c69b4ecf05178ffd18a3f3a
 - Rubygems: 
     uri: http://gemcutter.org
