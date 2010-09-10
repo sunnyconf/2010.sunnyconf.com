@@ -19,8 +19,8 @@
 		
 		return function(start, end, callback) {
 			var params = {
-				'start-min': $.fullCalendar.formatDate(start, 'u'),
-				'start-max': $.fullCalendar.formatDate(end, 'u'),
+				'start-min': "2010-09-25T00:00:00.000-07:00", // $.fullCalendar.formatDate(start, 'u'),
+				'start-max': "2010-09-26T00:00:00.000-07:00",// $.fullCalendar.formatDate(end, 'u'),
 				'singleevents': true,
 				'max-results': 9999
 			};
