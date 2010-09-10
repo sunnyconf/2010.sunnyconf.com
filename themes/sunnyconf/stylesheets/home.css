@@ -184,3 +184,14 @@ ul#menu li.logo {
   height: 100px;
   padding: 5px 10px 5px 0;
 }
+
+.meet_sponsor_logo {
+  float: left;
+  width: 200px;
+  padding: 5px 10px 5px 0;
+}
+
+.sponsor_blurb {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
