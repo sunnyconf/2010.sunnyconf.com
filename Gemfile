@@ -16,6 +16,9 @@ gem 'pg' #db_adapter=postgresql
 # If you are using Amazon S3 you probably want this gem:
 gem 'aws-s3'
 
+# For cron + bundle capture
+gem 'heroku'
+
 #===REFINERY REQUIRED GEMS===
 # gem 'acts_as_indexed',  '= 0.6.4', :require => 'acts_as_indexed'
 gem 'acts_as_indexed', :git => 'git://github.com/parndt/acts_as_indexed.git'
