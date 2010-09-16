@@ -195,3 +195,71 @@ ul#menu li.logo {
   padding-top: 20px;
   padding-bottom: 10px;
 }
+
+table.schedule {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.5em;
+  border-bottom: 1px solid #ccc;
+}
+
+.schedule th, .schedule td {
+  padding: 10px 10px;
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  text-align: left;
+}
+
+.schedule th {
+  width: 75px;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.schedule td {
+  font-weight: bold;
+  color: #333;
+}
+
+.schedule td a {
+  color: #000 !important;
+}
+
+.schedule .odd th, .schedule .odd td {
+  background: #eee;
+}
+
+.schedule th {
+  color: #666;
+}
+
+.schedule .fifteen_min th,
+.schedule .fifteen_min td {
+  height: 1.5em;
+}
+
+.schedule .thirty_min th,
+.schedule .thirty_min td {
+  height: 3em;
+}
+
+.schedule .fortyfive_min th,
+.schedule .fortyfive_min td {
+  height: 4.5em;
+}
+
+.schedule .one_hour th,
+.schedule .one_hour td {
+  height: 6em;
+}
+
+.schedule .ninety_min th,
+.schedule .ninety_min td {
+  height: 9em;
+}
+
+.schedule .two_hour th,
+.schedule .two_hour td {
+  height: 12em;
+}
