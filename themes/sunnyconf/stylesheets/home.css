@@ -263,3 +263,7 @@ table.schedule {
 .schedule .two_hour td {
   height: 12em;
 }
+
+#twitter_side {
+  padding-bottom: 15px;
+}
