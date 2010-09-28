@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+  <channel>
+    <title>sunnyconf - Static Twitter Search</title>
+    <link>http://search.twitter.com/search.atom?&amp;q=sunnyconf</link>
+    <description>sunnyconf - Static Twitter Search</description>
+    <item>
+      <title>Setting up Visual VM on my mac thx to the nice plug during the jruby preso at #sunnyconf</title>
+      <link>http://twitter.com/kcampos/status/25821557584</link>
+      <description>Setting up Visual VM on my mac thx to the nice plug during the jruby preso at #sunnyconf</description>
+      <pubDate>Tue, 28 Sep 2010 14:27:07 -0700</pubDate>
+      <dc:date>2010-09-28T14:27:07-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @supertunaman: off to management &amp;quot;class&amp;quot;. learned more from @hashrocket at #sunnyconf than this class could ever teach me, however.</title>
+      <link>http://twitter.com/sunnyconf/status/25821165874</link>
+      <description>RT @supertunaman: off to management &amp;quot;class&amp;quot;. learned more from @hashrocket at #sunnyconf than this class could ever teach me, however.</description>
+      <pubDate>Tue, 28 Sep 2010 14:21:57 -0700</pubDate>
+      <dc:date>2010-09-28T14:21:57-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @curtism: My photos from #sunnyconf are now available on Flickr. Check 'em out! http://is.gd/fwe58 #ruby</title>
+      <link>http://twitter.com/jaymcgavren/status/25816030446</link>
+      <description>RT @curtism: My photos from #sunnyconf are now available on Flickr. Check 'em out! http://is.gd/fwe58 #ruby</description>
+      <pubDate>Tue, 28 Sep 2010 13:09:37 -0700</pubDate>
+      <dc:date>2010-09-28T13:09:37-07:00</dc:date>
+    </item>
+    <item>
+      <title>Our lightning talk line up http://twitpic.com/2ryt0j #sunnyconf</title>
+      <link>http://twitter.com/sunnyconf/status/25813408724</link>
+      <description>Our lightning talk line up http://twitpic.com/2ryt0j #sunnyconf</description>
+      <pubDate>Tue, 28 Sep 2010 12:32:51 -0700</pubDate>
+      <dc:date>2010-09-28T12:32:51-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @heisenthought: When someone tweets about #sunnyconf my heart is filled with the warmth and joy of a thousand double rainbows. Also, God creates a kitten</title>
+      <link>http://twitter.com/fuzzymuzzle/status/25800952136</link>
+      <description>RT @heisenthought: When someone tweets about #sunnyconf my heart is filled with the warmth and joy of a thousand double rainbows. Also, God creates a kitten</description>
+      <pubDate>Tue, 28 Sep 2010 09:40:10 -0700</pubDate>
+      <dc:date>2010-09-28T09:40:10-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @supertunaman: off to management &amp;quot;class&amp;quot;. learned more from @hashrocket at #sunnyconf than this class could ever teach me, however.</title>
+      <link>http://twitter.com/jremsikjr/status/25762415222</link>
+      <description>RT @supertunaman: off to management &amp;quot;class&amp;quot;. learned more from @hashrocket at #sunnyconf than this class could ever teach me, however.</description>
+      <pubDate>Mon, 27 Sep 2010 23:40:02 -0700</pubDate>
+      <dc:date>2010-09-27T23:40:02-07:00</dc:date>
+    </item>
+    <item>
+      <title>@jimjeffers Sweet! Hopefully you'll have more time to blog &amp;amp; write open source, too. Was good to catch up w/ you at @SunnyConf as well.</title>
+      <link>http://twitter.com/benatkin/status/25761939797</link>
+      <description>@jimjeffers Sweet! Hopefully you'll have more time to blog &amp;amp; write open source, too. Was good to catch up w/ you at @SunnyConf as well.</description>
+      <pubDate>Mon, 27 Sep 2010 23:29:00 -0700</pubDate>
+      <dc:date>2010-09-27T23:29:00-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @danhixon: #sunnyconf @heisenthought is officially the king of ruby in Phoenix</title>
+      <link>http://twitter.com/supertunaman/status/25753482479</link>
+      <description>RT @danhixon: #sunnyconf @heisenthought is officially the king of ruby in Phoenix</description>
+      <pubDate>Mon, 27 Sep 2010 20:51:33 -0700</pubDate>
+      <dc:date>2010-09-27T20:51:33-07:00</dc:date>
+    </item>
+    <item>
+      <title>@curtism Great #sunnyconf snaps.  You caught the feel.</title>
+      <link>http://twitter.com/rayniemeir/status/25751475313</link>
+      <description>@curtism Great #sunnyconf snaps.  You caught the feel.</description>
+      <pubDate>Mon, 27 Sep 2010 20:24:11 -0700</pubDate>
+      <dc:date>2010-09-27T20:24:11-07:00</dc:date>
+    </item>
+    <item>
+      <title>@supertunaman Videos will be posted in about 3-5 weeks.</title>
+      <link>http://twitter.com/sunnyconf/status/25751017797</link>
+      <description>@supertunaman Videos will be posted in about 3-5 weeks.</description>
+      <pubDate>Mon, 27 Sep 2010 20:18:03 -0700</pubDate>
+      <dc:date>2010-09-27T20:18:03-07:00</dc:date>
+    </item>
+    <item>
+      <title>@heisenthought did you see my earlier @-reply? when will the #sunnyconf vids be up?</title>
+      <link>http://twitter.com/supertunaman/status/25750506656</link>
+      <description>@heisenthought did you see my earlier @-reply? when will the #sunnyconf vids be up?</description>
+      <pubDate>Mon, 27 Sep 2010 20:11:17 -0700</pubDate>
+      <dc:date>2010-09-27T20:11:17-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @curtism: Need more #ruby in your life? Check out @mountainrb coming up Oct 6-8th in Boulder, CO. http://mountainrb.com</title>
+      <link>http://twitter.com/sunnyconf/status/25750487613</link>
+      <description>RT @curtism: Need more #ruby in your life? Check out @mountainrb coming up Oct 6-8th in Boulder, CO. http://mountainrb.com</description>
+      <pubDate>Mon, 27 Sep 2010 20:11:02 -0700</pubDate>
+      <dc:date>2010-09-27T20:11:02-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @heisenthought: When someone tweets about #sunnyconf my heart is filled with the warmth and joy of a thousand double rainbows. Also, God creates a kitten</title>
+      <link>http://twitter.com/curtism/status/25741578955</link>
+      <description>RT @heisenthought: When someone tweets about #sunnyconf my heart is filled with the warmth and joy of a thousand double rainbows. Also, God creates a kitten</description>
+      <pubDate>Mon, 27 Sep 2010 18:20:23 -0700</pubDate>
+      <dc:date>2010-09-27T18:20:23-07:00</dc:date>
+    </item>
+    <item>
+      <title>@heisenthought I heard from multiple people that sunnyconf was a huge success - pretty impressive for a first-time conference</title>
+      <link>http://twitter.com/icey/status/25740931964</link>
+      <description>@heisenthought I heard from multiple people that sunnyconf was a huge success - pretty impressive for a first-time conference</description>
+      <pubDate>Mon, 27 Sep 2010 18:12:42 -0700</pubDate>
+      <dc:date>2010-09-27T18:12:42-07:00</dc:date>
+    </item>
+    <item>
+      <title>When someone tweets about #sunnyconf my heart is filled with the warmth and joy of a thousand double rainbows. Also, God creates a kitten</title>
+      <link>http://twitter.com/heisenthought/status/25740667380</link>
+      <description>When someone tweets about #sunnyconf my heart is filled with the warmth and joy of a thousand double rainbows. Also, God creates a kitten</description>
+      <pubDate>Mon, 27 Sep 2010 18:09:36 -0700</pubDate>
+      <dc:date>2010-09-27T18:09:36-07:00</dc:date>
+    </item>
+    <item>
+      <title>off to management &amp;quot;class&amp;quot;. learned more from @hashrocket at #sunnyconf than this class could ever teach me, however.</title>
+      <link>http://twitter.com/supertunaman/status/25735770038</link>
+      <description>off to management &amp;quot;class&amp;quot;. learned more from @hashrocket at #sunnyconf than this class could ever teach me, however.</description>
+      <pubDate>Mon, 27 Sep 2010 17:10:27 -0700</pubDate>
+      <dc:date>2010-09-27T17:10:27-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @curtism: Most. Amazing. Shirt. Ever. http://www.flickr.com/photos/curtm95/5030274037/ #sunnyconf #threewolfmoon @pivotallabs</title>
+      <link>http://twitter.com/sunnyconf/status/25726598557</link>
+      <description>RT @curtism: Most. Amazing. Shirt. Ever. http://www.flickr.com/photos/curtm95/5030274037/ #sunnyconf #threewolfmoon @pivotallabs</description>
+      <pubDate>Mon, 27 Sep 2010 15:23:22 -0700</pubDate>
+      <dc:date>2010-09-27T15:23:22-07:00</dc:date>
+    </item>
+    <item>
+      <title>Most. Amazing. Shirt. Ever. http://www.flickr.com/photos/curtm95/5030274037/ #sunnyconf #threewolfmoon @pivotallabs</title>
+      <link>http://twitter.com/curtism/status/25725841345</link>
+      <description>Most. Amazing. Shirt. Ever. http://www.flickr.com/photos/curtm95/5030274037/ #sunnyconf #threewolfmoon @pivotallabs</description>
+      <pubDate>Mon, 27 Sep 2010 15:13:13 -0700</pubDate>
+      <dc:date>2010-09-27T15:13:13-07:00</dc:date>
+    </item>
+    <item>
+      <title>http://ur1.ca/1sgfj - me giving a lightning talk at #sunnyconf. Note the &amp;quot;server not found&amp;quot; page and &amp;quot;jekyll&amp;quot; misspelled in the search bar.</title>
+      <link>http://twitter.com/supertunaman/status/25723383687</link>
+      <description>http://ur1.ca/1sgfj - me giving a lightning talk at #sunnyconf. Note the &amp;quot;server not found&amp;quot; page and &amp;quot;jekyll&amp;quot; misspelled in the search bar.</description>
+      <pubDate>Mon, 27 Sep 2010 14:39:11 -0700</pubDate>
+      <dc:date>2010-09-27T14:39:11-07:00</dc:date>
+    </item>
+    <item>
+      <title>#sunnyconf me giving a lighting talk: http://www.flickr.com/photos/chrismatthieu/5024814450/in/photostream/</title>
+      <link>http://twitter.com/danhixon/status/25719709138</link>
+      <description>#sunnyconf me giving a lighting talk: http://www.flickr.com/photos/chrismatthieu/5024814450/in/photostream/</description>
+      <pubDate>Mon, 27 Sep 2010 13:46:38 -0700</pubDate>
+      <dc:date>2010-09-27T13:46:38-07:00</dc:date>
+    </item>
+    <item>
+      <title>@curtism I wish I would have known that, I would have flexed it a little more.  Nice pics BTW.  #sunnyconf</title>
+      <link>http://twitter.com/brywilliams/status/25719130206</link>
+      <description>@curtism I wish I would have known that, I would have flexed it a little more.  Nice pics BTW.  #sunnyconf</description>
+      <pubDate>Mon, 27 Sep 2010 13:38:09 -0700</pubDate>
+      <dc:date>2010-09-27T13:38:09-07:00</dc:date>
+    </item>
+    <item>
+      <title>@brywilliams lol, that's exactly what I was thinking when I took that photo... kidding! #sunnyconf</title>
+      <link>http://twitter.com/curtism/status/25718678038</link>
+      <description>@brywilliams lol, that's exactly what I was thinking when I took that photo... kidding! #sunnyconf</description>
+      <pubDate>Mon, 27 Sep 2010 13:31:28 -0700</pubDate>
+      <dc:date>2010-09-27T13:31:28-07:00</dc:date>
+    </item>
+    <item>
+      <title>@nusairat thanks for making it out to #sunnyconf. Hope you like the pics :)</title>
+      <link>http://twitter.com/curtism/status/25718640377</link>
+      <description>@nusairat thanks for making it out to #sunnyconf. Hope you like the pics :)</description>
+      <pubDate>Mon, 27 Sep 2010 13:30:54 -0700</pubDate>
+      <dc:date>2010-09-27T13:30:54-07:00</dc:date>
+    </item>
+    <item>
+      <title>at #sunnyconf ... http://flic.kr/p/8EyH85 if u notice i am sporting the #columbusrb shirt</title>
+      <link>http://twitter.com/nusairat/status/25717822564</link>
+      <description>at #sunnyconf ... http://flic.kr/p/8EyH85 if u notice i am sporting the #columbusrb shirt</description>
+      <pubDate>Mon, 27 Sep 2010 13:18:44 -0700</pubDate>
+      <dc:date>2010-09-27T13:18:44-07:00</dc:date>
+    </item>
+    <item>
+      <title>The best part of me was captured in this photo at #sunnyconf...  my left shoulder  http://flic.kr/p/8EyH85</title>
+      <link>http://twitter.com/brywilliams/status/25717121269</link>
+      <description>The best part of me was captured in this photo at #sunnyconf...  my left shoulder  http://flic.kr/p/8EyH85</description>
+      <pubDate>Mon, 27 Sep 2010 13:08:32 -0700</pubDate>
+      <dc:date>2010-09-27T13:08:32-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @chrismatthieu: Here are my photos from #SunnyConf 2010 http://www.flickr.com/photos/chrismatthieu/sets/72157625034046082/</title>
+      <link>http://twitter.com/curtism/status/25716449407</link>
+      <description>RT @chrismatthieu: Here are my photos from #SunnyConf 2010 http://www.flickr.com/photos/chrismatthieu/sets/72157625034046082/</description>
+      <pubDate>Mon, 27 Sep 2010 12:58:58 -0700</pubDate>
+      <dc:date>2010-09-27T12:58:58-07:00</dc:date>
+    </item>
+    <item>
+      <title>Cool shot of me from #sunnyconf this past weekend: http://j.mp/cDvk1e (by @chrismatthieu)</title>
+      <link>http://twitter.com/luigimontanez/status/25716226453</link>
+      <description>Cool shot of me from #sunnyconf this past weekend: http://j.mp/cDvk1e (by @chrismatthieu)</description>
+      <pubDate>Mon, 27 Sep 2010 12:55:40 -0700</pubDate>
+      <dc:date>2010-09-27T12:55:40-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @chrismatthieu: Here are my photos from #SunnyConf 2010 http://www.flickr.com/photos/chrismatthieu/sets/72157625034046082/</title>
+      <link>http://twitter.com/sunnyconf/status/25715994772</link>
+      <description>RT @chrismatthieu: Here are my photos from #SunnyConf 2010 http://www.flickr.com/photos/chrismatthieu/sets/72157625034046082/</description>
+      <pubDate>Mon, 27 Sep 2010 12:52:15 -0700</pubDate>
+      <dc:date>2010-09-27T12:52:15-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @curtism: My photos from #sunnyconf are now available on Flickr. Check 'em out! http://is.gd/fwe58 #ruby</title>
+      <link>http://twitter.com/sunnyconf/status/25715936271</link>
+      <description>RT @curtism: My photos from #sunnyconf are now available on Flickr. Check 'em out! http://is.gd/fwe58 #ruby</description>
+      <pubDate>Mon, 27 Sep 2010 12:51:23 -0700</pubDate>
+      <dc:date>2010-09-27T12:51:23-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @chriscardinal: Every time I see the #sunnyconf hashtag, I think to myself &amp;quot;man, that @sunnythaper guy is REALLY popular!&amp;quot;</title>
+      <link>http://twitter.com/jaymcgavren/status/25715328043</link>
+      <description>RT @chriscardinal: Every time I see the #sunnyconf hashtag, I think to myself &amp;quot;man, that @sunnythaper guy is REALLY popular!&amp;quot;</description>
+      <pubDate>Mon, 27 Sep 2010 12:42:25 -0700</pubDate>
+      <dc:date>2010-09-27T12:42:25-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @curtism: Thanks @integrum, @devfu, @chargify and @bluebox for supporting the #ruby community by sponsoring #sunnyconf. Great conference!</title>
+      <link>http://twitter.com/drewlesueur/status/25715160953</link>
+      <description>RT @curtism: Thanks @integrum, @devfu, @chargify and @bluebox for supporting the #ruby community by sponsoring #sunnyconf. Great conference!</description>
+      <pubDate>Mon, 27 Sep 2010 12:39:59 -0700</pubDate>
+      <dc:date>2010-09-27T12:39:59-07:00</dc:date>
+    </item>
+    <item>
+      <title>My photos from #sunnyconf are now available on Flickr. Check 'em out! http://is.gd/fwe58 #ruby</title>
+      <link>http://twitter.com/curtism/status/25714990622</link>
+      <description>My photos from #sunnyconf are now available on Flickr. Check 'em out! http://is.gd/fwe58 #ruby</description>
+      <pubDate>Mon, 27 Sep 2010 12:37:27 -0700</pubDate>
+      <dc:date>2010-09-27T12:37:27-07:00</dc:date>
+    </item>
+    <item>
+      <title>♺ @curtism: Thanks @integrum, @devfu, @chargify and @bluebox for supporting the #ruby community by sponsoring #sunnyconf. Great conference!</title>
+      <link>http://twitter.com/loomis53/status/25714388324</link>
+      <description>♺ @curtism: Thanks @integrum, @devfu, @chargify and @bluebox for supporting the #ruby community by sponsoring #sunnyconf. Great conference!</description>
+      <pubDate>Mon, 27 Sep 2010 12:28:37 -0700</pubDate>
+      <dc:date>2010-09-27T12:28:37-07:00</dc:date>
+    </item>
+    <item>
+      <title>Learned from @SunnyConf: most Phoenix people who were there are people who travel to other confs. Few who don't travel for confs were there.</title>
+      <link>http://twitter.com/benatkin/status/25714057114</link>
+      <description>Learned from @SunnyConf: most Phoenix people who were there are people who travel to other confs. Few who don't travel for confs were there.</description>
+      <pubDate>Mon, 27 Sep 2010 12:23:48 -0700</pubDate>
+      <dc:date>2010-09-27T12:23:48-07:00</dc:date>
+    </item>
+    <item>
+      <title>If you'd like us to include them in our write up, tag your tweets with #sunnyconf.  See http://hashalbum.com/sunnyconf</title>
+      <link>http://twitter.com/sunnyconf/status/25713992116</link>
+      <description>If you'd like us to include them in our write up, tag your tweets with #sunnyconf.  See http://hashalbum.com/sunnyconf</description>
+      <pubDate>Mon, 27 Sep 2010 12:22:49 -0700</pubDate>
+      <dc:date>2010-09-27T12:22:49-07:00</dc:date>
+    </item>
+    <item>
+      <title>@headius Thanks for coming to @SunnyConf! *Loved* both of your talks. I, too, am glad to be back at a coffee shop in my home city (Boulder).</title>
+      <link>http://twitter.com/benatkin/status/25713596288</link>
+      <description>@headius Thanks for coming to @SunnyConf! *Loved* both of your talks. I, too, am glad to be back at a coffee shop in my home city (Boulder).</description>
+      <pubDate>Mon, 27 Sep 2010 12:17:02 -0700</pubDate>
+      <dc:date>2010-09-27T12:17:02-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @Chargify: No prob! RT @curtism Thanks @integrum, @devfu, @chargify, and @bluebox for supporting the #ruby community by sponsoring #sunnyconf.</title>
+      <link>http://twitter.com/lancewalley/status/25712463123</link>
+      <description>RT @Chargify: No prob! RT @curtism Thanks @integrum, @devfu, @chargify, and @bluebox for supporting the #ruby community by sponsoring #sunnyconf.</description>
+      <pubDate>Mon, 27 Sep 2010 12:00:40 -0700</pubDate>
+      <dc:date>2010-09-27T12:00:40-07:00</dc:date>
+    </item>
+    <item>
+      <title>No prob! RT @curtism Thanks @integrum, @devfu, @chargify, and @bluebox for supporting the #ruby community by sponsoring #sunnyconf.</title>
+      <link>http://twitter.com/Chargify/status/25712403549</link>
+      <description>No prob! RT @curtism Thanks @integrum, @devfu, @chargify, and @bluebox for supporting the #ruby community by sponsoring #sunnyconf.</description>
+      <pubDate>Mon, 27 Sep 2010 11:59:52 -0700</pubDate>
+      <dc:date>2010-09-27T11:59:52-07:00</dc:date>
+    </item>
+    <item>
+      <title>Thanks @integrum, @devfu, @chargify and @bluebox for supporting the #ruby community by sponsoring #sunnyconf. Great conference!</title>
+      <link>http://twitter.com/curtism/status/25712093320</link>
+      <description>Thanks @integrum, @devfu, @chargify and @bluebox for supporting the #ruby community by sponsoring #sunnyconf. Great conference!</description>
+      <pubDate>Mon, 27 Sep 2010 11:55:10 -0700</pubDate>
+      <dc:date>2010-09-27T11:55:10-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @sunnyconf: Did you enjoy #sunnyconf? Hit up #phxrails on Sept 28 and #phxruby on Oct 11! More info at http://phxrails.com and http://rubyaz.org</title>
+      <link>http://twitter.com/curtism/status/25711055974</link>
+      <description>RT @sunnyconf: Did you enjoy #sunnyconf? Hit up #phxrails on Sept 28 and #phxruby on Oct 11! More info at http://phxrails.com and http://rubyaz.org</description>
+      <pubDate>Mon, 27 Sep 2010 11:39:25 -0700</pubDate>
+      <dc:date>2010-09-27T11:39:25-07:00</dc:date>
+    </item>
+    <item>
+      <title>SunnyConf Speaker Timer http://bit.ly/cPg5rp</title>
+      <link>http://twitter.com/speechconnecti/status/25708812991</link>
+      <description>SunnyConf Speaker Timer http://bit.ly/cPg5rp</description>
+      <pubDate>Mon, 27 Sep 2010 11:05:56 -0700</pubDate>
+      <dc:date>2010-09-27T11:05:56-07:00</dc:date>
+    </item>
+    <item>
+      <title>Congratulations @SunnyConf for a successful Ruby conference this weekend! Glad we could help with your timer app - http://bit.ly/bzIyNn</title>
+      <link>http://twitter.com/Tropo/status/25706680511</link>
+      <description>Congratulations @SunnyConf for a successful Ruby conference this weekend! Glad we could help with your timer app - http://bit.ly/bzIyNn</description>
+      <pubDate>Mon, 27 Sep 2010 10:35:06 -0700</pubDate>
+      <dc:date>2010-09-27T10:35:06-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @brywilliams: Congrats to @heisenthought and all those involved in putting on a great conference Saturday!  #sunnyconf</title>
+      <link>http://twitter.com/sunnyconf/status/25703804614</link>
+      <description>RT @brywilliams: Congrats to @heisenthought and all those involved in putting on a great conference Saturday!  #sunnyconf</description>
+      <pubDate>Mon, 27 Sep 2010 09:55:49 -0700</pubDate>
+      <dc:date>2010-09-27T09:55:49-07:00</dc:date>
+    </item>
+    <item>
+      <title>Congrats to @heisenthought and all those involved in putting on a great conference Saturday!  #sunnyconf</title>
+      <link>http://twitter.com/brywilliams/status/25703734707</link>
+      <description>Congrats to @heisenthought and all those involved in putting on a great conference Saturday!  #sunnyconf</description>
+      <pubDate>Mon, 27 Sep 2010 09:54:55 -0700</pubDate>
+      <dc:date>2010-09-27T09:54:55-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @heisenthought: So thankful and proud of what we accomplished today. It was a damn good day. #sunnyconf</title>
+      <link>http://twitter.com/sunnyconf/status/25703564012</link>
+      <description>RT @heisenthought: So thankful and proud of what we accomplished today. It was a damn good day. #sunnyconf</description>
+      <pubDate>Mon, 27 Sep 2010 09:52:41 -0700</pubDate>
+      <dc:date>2010-09-27T09:52:41-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @BM5k: Sunnyconf kicked ass! Thanks @heisenthought for leading the charge! Proud to be a part of the community that made this happen!</title>
+      <link>http://twitter.com/sunnyconf/status/25703555770</link>
+      <description>RT @BM5k: Sunnyconf kicked ass! Thanks @heisenthought for leading the charge! Proud to be a part of the community that made this happen!</description>
+      <pubDate>Mon, 27 Sep 2010 09:52:35 -0700</pubDate>
+      <dc:date>2010-09-27T09:52:35-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @jimjeffers: @heisenthought congrats on organizing an awesome conference!</title>
+      <link>http://twitter.com/sunnyconf/status/25703553462</link>
+      <description>RT @jimjeffers: @heisenthought congrats on organizing an awesome conference!</description>
+      <pubDate>Mon, 27 Sep 2010 09:52:33 -0700</pubDate>
+      <dc:date>2010-09-27T09:52:33-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @danhixon: #sunnyconf @heisenthought is officially the king of ruby in Phoenix</title>
+      <link>http://twitter.com/sunnyconf/status/25703540255</link>
+      <description>RT @danhixon: #sunnyconf @heisenthought is officially the king of ruby in Phoenix</description>
+      <pubDate>Mon, 27 Sep 2010 09:52:23 -0700</pubDate>
+      <dc:date>2010-09-27T09:52:23-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @jjmerrill: Big thanks to @heisenthought, organizers, sponsors, speakers for an awesome first #Sunnyconf! (Ruby programming conference in Tempe, AZ)</title>
+      <link>http://twitter.com/sunnyconf/status/25703517991</link>
+      <description>RT @jjmerrill: Big thanks to @heisenthought, organizers, sponsors, speakers for an awesome first #Sunnyconf! (Ruby programming conference in Tempe, AZ)</description>
+      <pubDate>Mon, 27 Sep 2010 09:52:06 -0700</pubDate>
+      <dc:date>2010-09-27T09:52:06-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @iamruinous: @heisenthought great job on #sunnyconf, makes me a proud Phoenix rubyist!</title>
+      <link>http://twitter.com/sunnyconf/status/25703506900</link>
+      <description>RT @iamruinous: @heisenthought great job on #sunnyconf, makes me a proud Phoenix rubyist!</description>
+      <pubDate>Mon, 27 Sep 2010 09:51:57 -0700</pubDate>
+      <dc:date>2010-09-27T09:51:57-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @chrismatthieu: Standing ovation to @heisenthought for a super successful #Sunnyconf! When's the next one?</title>
+      <link>http://twitter.com/sunnyconf/status/25703502407</link>
+      <description>RT @chrismatthieu: Standing ovation to @heisenthought for a super successful #Sunnyconf! When's the next one?</description>
+      <pubDate>Mon, 27 Sep 2010 09:51:54 -0700</pubDate>
+      <dc:date>2010-09-27T09:51:54-07:00</dc:date>
+    </item>
+    <item>
+      <title>Thank you RT @dneighbors @heisenthought great job taking lead on #sunnyconf seeing passionate people from around country here is inspiring</title>
+      <link>http://twitter.com/heisenthought/status/25703026980</link>
+      <description>Thank you RT @dneighbors @heisenthought great job taking lead on #sunnyconf seeing passionate people from around country here is inspiring</description>
+      <pubDate>Mon, 27 Sep 2010 09:45:49 -0700</pubDate>
+      <dc:date>2010-09-27T09:45:49-07:00</dc:date>
+    </item>
+    <item>
+      <title>Found the iPad app @jimjeffers told be about at #SunnyConf: http://www.informationarchitects.jp/en/writer-for-ipad/ Going to get it today!</title>
+      <link>http://twitter.com/benatkin/status/25701667291</link>
+      <description>Found the iPad app @jimjeffers told be about at #SunnyConf: http://www.informationarchitects.jp/en/writer-for-ipad/ Going to get it today!</description>
+      <pubDate>Mon, 27 Sep 2010 09:28:53 -0700</pubDate>
+      <dc:date>2010-09-27T09:28:53-07:00</dc:date>
+    </item>
+    <item>
+      <title>At least my body waited until after #sunnyconf to catch a cold…</title>
+      <link>http://twitter.com/curtism/status/25701052028</link>
+      <description>At least my body waited until after #sunnyconf to catch a cold…</description>
+      <pubDate>Mon, 27 Sep 2010 09:21:17 -0700</pubDate>
+      <dc:date>2010-09-27T09:21:17-07:00</dc:date>
+    </item>
+    <item>
+      <title>Ah back too it.  Loads of new ideas following #sunnyconf - but, stuck doing a screencast for stuff other than Ruby.  Suck.</title>
+      <link>http://twitter.com/kit_plummer/status/25688908686</link>
+      <description>Ah back too it.  Loads of new ideas following #sunnyconf - but, stuck doing a screencast for stuff other than Ruby.  Suck.</description>
+      <pubDate>Mon, 27 Sep 2010 07:02:17 -0700</pubDate>
+      <dc:date>2010-09-27T07:02:17-07:00</dc:date>
+    </item>
+    <item>
+      <title>Carl Spackler now sports the #sunnyconf badge.  Thanks again to the organizers and presenters. http://plixi.com/p/47467864</title>
+      <link>http://twitter.com/GreggTurnbull/status/25688152257</link>
+      <description>Carl Spackler now sports the #sunnyconf badge.  Thanks again to the organizers and presenters. http://plixi.com/p/47467864</description>
+      <pubDate>Mon, 27 Sep 2010 06:53:21 -0700</pubDate>
+      <dc:date>2010-09-27T06:53:21-07:00</dc:date>
+    </item>
+    <item>
+      <title>RT @OlafLewitz: :-) RT @devfu: DDT - development driven testing #antipattern #sunnyconf</title>
+      <link>http://twitter.com/IlIlIIlIlIlIlII/status/25668645265</link>
+      <description>RT @OlafLewitz: :-) RT @devfu: DDT - development driven testing #antipattern #sunnyconf</description>
+      <pubDate>Mon, 27 Sep 2010 01:21:39 -0700</pubDate>
+      <dc:date>2010-09-27T01:21:39-07:00</dc:date>
+    </item>
+    <item>
+      <title>BTW, @bmizerany's talk was awesome, but I can't recommend presenting from an iPad, and I'm betting he won't again, either. #sunnyconf</title>
+      <link>http://twitter.com/jaymcgavren/status/25661261263</link>
+      <description>BTW, @bmizerany's talk was awesome, but I can't recommend presenting from an iPad, and I'm betting he won't again, either. #sunnyconf</description>
+      <pubDate>Sun, 26 Sep 2010 22:45:22 -0700</pubDate>
+      <dc:date>2010-09-26T22:45:22-07:00</dc:date>
+    </item>
+    <item>
+      <title>:-) RT @devfu: DDT - development driven testing #antipattern #sunnyconf</title>
+      <link>http://twitter.com/OlafLewitz/status/25654652290</link>
+      <description>:-) RT @devfu: DDT - development driven testing #antipattern #sunnyconf</description>
+      <pubDate>Sun, 26 Sep 2010 20:55:04 -0700</pubDate>
+      <dc:date>2010-09-26T20:55:04-07:00</dc:date>
+    </item>
+    <item>
+      <title>lol look at that stud @bsbodden  at #sunnyconf http://flic.kr/p/8DYfGg</title>
+      <link>http://twitter.com/nusairat/status/25653031241</link>
+      <description>lol look at that stud @bsbodden  at #sunnyconf http://flic.kr/p/8DYfGg</description>
+      <pubDate>Sun, 26 Sep 2010 20:32:28 -0700</pubDate>
+      <dc:date>2010-09-26T20:32:28-07:00</dc:date>
+    </item>
+  </channel>
+</rss>
