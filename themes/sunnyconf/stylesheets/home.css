@@ -307,3 +307,7 @@ blockquote {
   margin: 0;
   padding: 0;
 }
+
+#twitter_side {
+  padding-bottom: 15px;
+}
