@@ -263,3 +263,47 @@ table.schedule {
 .schedule .two_hour td {
   height: 12em;
 }
+
+blockquote {
+  margin: 0 0 1em 0;
+  background: #ddd;
+  padding: 15px;
+  border-radius: 10px 0px 10px 0px;
+}
+
+.album div {
+  display: inline-block;
+  margin: 0 10px 10px 0;
+}
+
+.album img {
+  border: 1px solid white;
+  -moz-box-shadow: 0px 0px 5px #000;
+  -webkit-box-shadow: 0px 0px 5px #000;
+  box-shadow: 0px 0px 5px #000;
+}
+
+.credits {
+  float: left;
+  margin: 0 10px 0 0;
+  width: 115px
+}
+
+.credits h3 {
+  color: #c02b23;
+  font-size: 20px;
+  margin: 0 0 .5em 0;
+}
+
+.credits ul {
+  margin: 0 !important;
+  padding: 0;
+  list-style: none;
+}
+
+.credits li {
+  font-weight: normal;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
